@@ -1,5 +1,14 @@
-[gd_scene format=3 uid="uid://dkinti5dvjm5q"]
+[gd_scene load_steps=3 format=3 uid="uid://dkinti5dvjm5q"]
+
+[ext_resource type="PackedScene" uid="uid://baabn48f6q0qf" path="res://flower.tscn" id="1_cn5cr"]
+[ext_resource type="PackedScene" uid="uid://crs1qne0rtnsf" path="res://Scenes/Grass.tscn" id="2_pyyoy"]
 
 [node name="Main" type="Node2D"]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" parent="." instance=ExtResource("1_cn5cr")]
+position = Vector2(-15, 3)
+frame_progress = 0.298757
+
+[node name="AnimatedSprite2D2" parent="." instance=ExtResource("2_pyyoy")]
+position = Vector2(-22, 4)
+frame_progress = 0.385784
