@@ -1,24 +1,40 @@
-[gd_scene load_steps=5 format=3 uid="uid://dkinti5dvjm5q"]
+[gd_scene load_steps=8 format=3 uid="uid://dkinti5dvjm5q"]
 
 [ext_resource type="PackedScene" uid="uid://baabn48f6q0qf" path="res://flower.tscn" id="1_cn5cr"]
 [ext_resource type="PackedScene" uid="uid://crs1qne0rtnsf" path="res://Scenes/Grass.tscn" id="2_pyyoy"]
 [ext_resource type="PackedScene" uid="uid://dxy11jayr3sq4" path="res://widegrass.tscn" id="3_fnhqv"]
 [ext_resource type="Script" path="res://Scripts/Character.gd" id="4_4xta0"]
+[ext_resource type="Texture2D" uid="uid://blbcpy716qjkb" path="res://Sprites/Environment/Floor grass.png" id="5_x22jb"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y2qs8"]
+texture = ExtResource("5_x22jb")
+texture_region_size = Vector2i(10, 10)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_k07s7"]
+sources/1 = SubResource("TileSetAtlasSource_y2qs8")
 
 [node name="Main" type="Node2D"]
 
 [node name="AnimatedSprite2D" parent="." instance=ExtResource("1_cn5cr")]
-position = Vector2(-76, -14)
+position = Vector2(260.5, 286.5)
+scale = Vector2(4.35714, 4.35714)
 frame = 6
 frame_progress = 0.00932383
 
 [node name="AnimatedSprite2D2" parent="." instance=ExtResource("2_pyyoy")]
-position = Vector2(-59, -14)
+position = Vector2(182, 315)
 frame = 4
 frame_progress = 0.999972
 
 [node name="AnimatedSprite2D3" parent="." instance=ExtResource("3_fnhqv")]
-position = Vector2(-48, -15)
+position = Vector2(306, 308)
+scale = Vector2(3.75, 3.75)
 
 [node name="Character" type="CharacterBody2D" parent="."]
 script = ExtResource("4_4xta0")
+
+[node name="TileMap" type="TileMap" parent="."]
+texture_filter = 1
+tile_set = SubResource("TileSet_k07s7")
+format = 2
