@@ -1,17 +1,18 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1707960189
-flower.tscn::PackedScene::2386506190431592921::1707957699::0::1::::<><>::uid://ctqt40apd54sb::::res://Sprites/Environment/flower.png
-icon.svg::CompressedTexture2D::8904118163723717515::1707957699::1707957699::1::::<><>::
-main.tscn::PackedScene::7878489227177933876::1707957699::0::1::::<><>::uid://baabn48f6q0qf::::res://flower.tscn<>uid://crs1qne0rtnsf::::res://Scenes/Grass.tscn<>uid://dxy11jayr3sq4::::res://widegrass.tscn<>res://Scripts/Character.gd
-widegrass.tscn::PackedScene::8824776067129379061::1707957699::0::1::::<><>::uid://dtwjq61f54331::::res://Sprites/Environment/wide grass.png
-::res://Scenes/::1707957699
-Grass.tscn::PackedScene::6004818413462370277::1707957699::0::1::::<><>::uid://4jxgwvveoens::::res://Sprites/Environment/Grass.png
-node_2d.tscn::PackedScene::3356597265597077870::1707957699::0::1::::<><>::
-::res://Scripts/::1707957699
-Character.gd::GDScript::-1::1707957699::0::1::::<>CharacterBody2D<>::
-::res://Sprites/::1707960189
-::res://Sprites/Environment/::1707960189
-Floor grass.png::CompressedTexture2D::3160711873577155241::1707960186::1707960189::1::::<><>::
-flower.png::CompressedTexture2D::6140666165230085849::1707957699::1707957699::1::::<><>::
-Grass.png::CompressedTexture2D::2055464259801175660::1707957699::1707957699::1::::<><>::
-wide grass.png::CompressedTexture2D::8538843085085819690::1707957699::1707957699::1::::<><>::
+::res://::1708038757
+flower.tscn::PackedScene::2386506190431592921::1708037959::0::1::::<><>::uid://ctqt40apd54sb::::res://Sprites/Environment/flower.png
+icon.svg::CompressedTexture2D::8904118163723717515::1708037959::1708037959::1::::<><>::
+main.tscn::PackedScene::7878489227177933876::1708038409::0::1::::<><>::uid://baabn48f6q0qf::::res://flower.tscn<>uid://crs1qne0rtnsf::::res://Scenes/Grass.tscn<>uid://dxy11jayr3sq4::::res://widegrass.tscn<>res://Scripts/Character.gd<>uid://6gcqelym3m8g::::res://Sprites/Environment/tile.png
+widegrass.tscn::PackedScene::8824776067129379061::1708037959::0::1::::<><>::uid://dtwjq61f54331::::res://Sprites/Environment/wide grass.png
+::res://Scenes/::1708038757
+Grass.tscn::PackedScene::6004818413462370277::1708037959::0::1::::<><>::uid://4jxgwvveoens::::res://Sprites/Environment/Grass.png
+node_2d.tscn::PackedScene::3356597265597077870::1708037959::0::1::::<><>::
+::res://Scripts/::1708037959
+Character.gd::GDScript::-1::1708037959::0::1::::<>CharacterBody2D<>::
+::res://Sprites/::1708038070
+::res://Sprites/Environment/::1708038757
+Dirt.png::CompressedTexture2D::1078889551835146126::1708038754::1708038757::1::::<><>::
+flower.png::CompressedTexture2D::6140666165230085849::1708037959::1708037959::1::::<><>::
+Grass.png::CompressedTexture2D::2055464259801175660::1708037959::1708037959::1::::<><>::
+tile.png::CompressedTexture2D::2188390654185224696::1708038064::1708038070::1::::<><>::
+wide grass.png::CompressedTexture2D::8538843085085819690::1708037959::1708037959::1::::<><>::
