@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dkinti5dvjm5q"]
+[gd_scene load_steps=13 format=3 uid="uid://dkinti5dvjm5q"]
 
 [ext_resource type="PackedScene" uid="uid://baabn48f6q0qf" path="res://flower.tscn" id="1_cn5cr"]
 [ext_resource type="PackedScene" uid="uid://crs1qne0rtnsf" path="res://Scenes/Grass.tscn" id="2_pyyoy"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://6gcqelym3m8g" path="res://Sprites/Environment/tile.png" id="5_v6nsn"]
 [ext_resource type="Texture2D" uid="uid://pmvfhg7jcfkg" path="res://Sprites/Environment/Dirt.png" id="6_jywvv"]
 [ext_resource type="Texture2D" uid="uid://c41rgk8t4xdqv" path="res://Sprites/Environment/CornerTile.png" id="7_oe5ig"]
+[ext_resource type="Script" path="res://Scripts/TPA.gd" id="8_oret2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2k5fa"]
 texture = ExtResource("5_v6nsn")
@@ -60,3 +61,12 @@ texture_filter = 1
 tile_set = SubResource("TileSet_k07s7")
 format = 2
 layer_0/tile_data = PackedInt32Array(2228226, 0, 0, 2228227, 0, 0, 2228228, 0, 0, 2228229, 0, 0, 2228230, 0, 0, 2228231, 0, 0, 2228232, 0, 0, 2228233, 0, 0, 2228234, 0, 0, 2228235, 0, 0, 2293761, 1, 0, 2293762, 1, 0, 2293763, 1, 0, 2293764, 1, 0, 2293765, 1, 0, 2293766, 1, 0, 2293767, 1, 0, 2293768, 1, 0, 2293769, 1, 0, 2293770, 1, 0, 2293771, 1, 0, 2293772, 1, 0, 2359308, 1, 0, 2359307, 1, 0, 2359306, 1, 0, 2359305, 1, 0, 2359304, 1, 0, 2359303, 1, 0, 2359302, 1, 0, 2359301, 1, 0, 2359300, 1, 0, 2359299, 1, 0, 2359298, 1, 0, 2359297, 1, 0, 2228236, 2, 0, 2228225, 2, 268435456)
+
+[node name="TPA" type="Area2D" parent="."]
+script = ExtResource("8_oret2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TPA"]
+
+[node name="TPB" type="Area2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TPB"]
