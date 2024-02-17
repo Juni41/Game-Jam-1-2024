@@ -1,8 +1,31 @@
-[gd_scene load_steps=3 format=3 uid="uid://c8ws5idwflt67"]
+[gd_scene load_steps=7 format=3 uid="uid://c8ws5idwflt67"]
 
 [ext_resource type="Script" path="res://Scripts/Character.gd" id="1_y7s6a"]
+[ext_resource type="Texture2D" uid="uid://dkho35mfti8wg" path="res://Character.png" id="2_t7uk0"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_symls"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_afjx7"]
+atlas = ExtResource("2_t7uk0")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qie1r"]
+atlas = ExtResource("2_t7uk0")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qs77k"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_afjx7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qie1r")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 1.0
+}]
 
 [node name="MainChar" type="CharacterBody2D"]
 script = ExtResource("1_y7s6a")
@@ -16,3 +39,9 @@ zoom = Vector2(5, 5)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(110, 526)
 shape = SubResource("CapsuleShape2D_symls")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_qs77k")
+animation = &"idle"
+frame_progress = 0.890595
