@@ -13,27 +13,52 @@
 texture = ExtResource("5_v6nsn")
 texture_region_size = Vector2i(18, 26)
 0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
 1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
 0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
 1:1/0 = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5v4t0"]
 texture = ExtResource("6_jywvv")
 texture_region_size = Vector2i(18, 27)
 0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
 1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
 0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
 1:1/0 = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kwifr"]
 texture = ExtResource("7_oe5ig")
 texture_region_size = Vector2i(18, 26)
 0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
 1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
 0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
 1:1/0 = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSet" id="TileSet_k07s7"]
+physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_2k5fa")
 sources/1 = SubResource("TileSetAtlasSource_5v4t0")
 sources/2 = SubResource("TileSetAtlasSource_kwifr")
@@ -55,6 +80,7 @@ position = Vector2(78, 534)
 scale = Vector2(1.34375, 1.34375)
 
 [node name="MainChar" parent="." instance=ExtResource("4_q1odw")]
+position = Vector2(-4, 6)
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
@@ -70,3 +96,5 @@ script = ExtResource("8_oret2")
 [node name="TPB" type="Area2D" parent="."]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TPB"]
+
+[node name="Timer" type="Timer" parent="."]
