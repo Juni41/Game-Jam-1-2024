@@ -49,4 +49,5 @@ animations = [{
 position = Vector2(-35, 13)
 sprite_frames = SubResource("SpriteFrames_epo73")
 animation = &"Grass"
+autoplay = "Grass"
 frame_progress = 0.870919

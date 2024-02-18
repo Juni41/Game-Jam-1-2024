@@ -1,0 +1,82 @@
+[gd_scene load_steps=10 format=3 uid="uid://c8ws5idwflt67"]
+
+[ext_resource type="Script" path="res://Scripts/Character.gd" id="1_y7s6a"]
+[ext_resource type="Texture2D" uid="uid://ca7in2cmks3g3" path="res://Sprites/Characters/walkcyclefinal.png" id="2_jwsu7"]
+[ext_resource type="Texture2D" uid="uid://by4fyon6qf1de" path="res://Sprites/Characters/idle.png" id="2_oeh22"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w12r6"]
+atlas = ExtResource("2_oeh22")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gcnxn"]
+atlas = ExtResource("2_oeh22")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ymkk4"]
+atlas = ExtResource("2_jwsu7")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1wlk7"]
+atlas = ExtResource("2_jwsu7")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r7fp1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w12r6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gcnxn")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 1.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"jump_end",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"jump_start",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ymkk4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1wlk7")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 3.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_symls"]
+radius = 7.0
+height = 26.0
+
+[node name="MainChar" type="CharacterBody2D"]
+position = Vector2(251, 645)
+script = ExtResource("1_y7s6a")
+speed = 75.0
+jump_velocity = -150.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(110, 522)
+sprite_frames = SubResource("SpriteFrames_r7fp1")
+animation = &"walk"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(110, 525)
+shape = SubResource("CapsuleShape2D_symls")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(114, 525)
+zoom = Vector2(4, 4)
+drag_horizontal_enabled = true
+drag_vertical_enabled = true

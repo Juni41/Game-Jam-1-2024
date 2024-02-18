@@ -29,9 +29,15 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, speed)
 	update_animation()
 	move_and_slide()
+	update_direction_h()
 func update_animation():
 	if not animation_locked:
 		if direction.x != 0:
 			animated_sprite.play("walk")
 		else:
 			animated_sprite.play("idle")
+func update_direction_h():
+	if direction.x > 0:
+		animated_sprite.flip_h = false
+	elif direction.x < 0:
+		animated_sprite.flip_h = true

@@ -1,3 +1,8 @@
+CollisionShape2D
+Area2D
+Label
+Popup
+Node2D
 AnimatedSprite2D
 GPUParticles2D
 Camera2D
@@ -6,9 +11,5 @@ Sprite2D
 AnimationPlayer
 TileMap
 Timer
-Area2D
 MenuBar
 CanvasModulate
-Container
-CollisionShape2D
-CharacterBody2D

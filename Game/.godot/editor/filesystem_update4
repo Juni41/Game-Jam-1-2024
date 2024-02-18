@@ -2,3 +2,6 @@ res://main.tscn
 res://main_char.tscn
 res://Scenes/Grass.tscn
 res://flower.tscn
+res://Popup.gd
+res://Surface.gd
+res://popup.tscn

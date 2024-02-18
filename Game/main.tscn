@@ -1,15 +1,13 @@
-[gd_scene load_steps=15 format=3 uid="uid://dkinti5dvjm5q"]
+[gd_scene load_steps=16 format=3 uid="uid://dkinti5dvjm5q"]
 
-[ext_resource type="PackedScene" uid="uid://baabn48f6q0qf" path="res://flower.tscn" id="1_cn5cr"]
-[ext_resource type="Script" path="res://Scripts/anim_handler.gd" id="1_xtk4t"]
+[ext_resource type="PackedScene" uid="uid://baabn48f6q0qf" path="res://Scenes/flower.tscn" id="1_cn5cr"]
 [ext_resource type="PackedScene" uid="uid://crs1qne0rtnsf" path="res://Scenes/Grass.tscn" id="2_pyyoy"]
-[ext_resource type="PackedScene" uid="uid://dxy11jayr3sq4" path="res://widegrass.tscn" id="3_fnhqv"]
-[ext_resource type="Script" path="res://Scripts/Grass.gd" id="3_vgsid"]
-[ext_resource type="PackedScene" uid="uid://c8ws5idwflt67" path="res://main_char.tscn" id="4_q1odw"]
+[ext_resource type="PackedScene" uid="uid://dxy11jayr3sq4" path="res://Scenes/widegrass.tscn" id="3_fnhqv"]
+[ext_resource type="PackedScene" uid="uid://c8ws5idwflt67" path="res://Scenes/main_char.tscn" id="4_q1odw"]
 [ext_resource type="Texture2D" uid="uid://6gcqelym3m8g" path="res://Sprites/Environment/tile.png" id="5_v6nsn"]
 [ext_resource type="Texture2D" uid="uid://pmvfhg7jcfkg" path="res://Sprites/Environment/Dirt.png" id="6_jywvv"]
 [ext_resource type="Texture2D" uid="uid://c41rgk8t4xdqv" path="res://Sprites/Environment/CornerTile.png" id="7_oe5ig"]
-[ext_resource type="Script" path="res://Scripts/TPA.gd" id="8_oret2"]
+[ext_resource type="Script" path="res://Surface.gd" id="9_iyhg8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2k5fa"]
 texture = ExtResource("5_v6nsn")
@@ -67,40 +65,95 @@ sources/0 = SubResource("TileSetAtlasSource_2k5fa")
 sources/1 = SubResource("TileSetAtlasSource_5v4t0")
 sources/2 = SubResource("TileSetAtlasSource_kwifr")
 
+[sub_resource type="GDScript" id="GDScript_o1ksx"]
+script/source = "extends Area2D
+
+var destination_teleporter: Node2D # Reference to the destination teleporter
+
+func _on_TeleporterA_body_entered(body):
+	if body.is_in_group(\"player\"): # Change \"player\" to your player's group
+		body.position = destination_teleporter.position
+"
+
+[sub_resource type="GDScript" id="GDScript_gusme"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_52g3q"]
+size = Vector2(140, 228)
+
 [node name="Main" type="Node2D"]
-script = ExtResource("1_xtk4t")
-
-[node name="AnimatedSprite2D" parent="." instance=ExtResource("1_cn5cr")]
-position = Vector2(93, 537)
-scale = Vector2(1.10714, 1.10714)
-frame = 6
-frame_progress = 0.00932383
-
-[node name="AnimatedSprite2D2" parent="." instance=ExtResource("2_pyyoy")]
-position = Vector2(63, 538)
-frame = 2
-frame_progress = 0.0
-script = ExtResource("3_vgsid")
-
-[node name="AnimatedSprite2D3" parent="." instance=ExtResource("3_fnhqv")]
-position = Vector2(78, 534)
-scale = Vector2(1.34375, 1.34375)
 
 [node name="Player" parent="." instance=ExtResource("4_q1odw")]
 position = Vector2(-4, 6)
+jump_velocity = -180.0
 
 [node name="Environment" type="TileMap" parent="."]
 texture_filter = 1
 tile_set = SubResource("TileSet_k07s7")
 format = 2
 layer_0/name = "Ground"
-layer_0/tile_data = PackedInt32Array(2228226, 0, 0, 2228227, 0, 0, 2228228, 0, 0, 2228229, 0, 0, 2228230, 0, 0, 2228231, 0, 0, 2228232, 0, 0, 2228233, 0, 0, 2228234, 0, 0, 2228235, 0, 0, 2293761, 1, 0, 2293762, 1, 0, 2293763, 1, 0, 2293764, 1, 0, 2293765, 1, 0, 2293766, 1, 0, 2293767, 1, 0, 2293768, 1, 0, 2293769, 1, 0, 2293770, 1, 0, 2293771, 1, 0, 2293772, 1, 0, 2359308, 1, 0, 2359307, 1, 0, 2359306, 1, 0, 2359305, 1, 0, 2359304, 1, 0, 2359303, 1, 0, 2359302, 1, 0, 2359301, 1, 0, 2359300, 1, 0, 2359299, 1, 0, 2359298, 1, 0, 2359297, 1, 0, 2228236, 2, 0, 2228225, 2, 268435456)
+layer_0/tile_data = PackedInt32Array(2228226, 0, 0, 2228227, 0, 0, 2228228, 0, 0, 2228229, 0, 0, 2228230, 0, 0, 2228231, 0, 0, 2228232, 0, 0, 2228233, 0, 0, 2228234, 0, 0, 2228235, 0, 0, 2293761, 1, 0, 2293762, 1, 0, 2293763, 1, 0, 2293764, 1, 0, 2293765, 1, 0, 2293766, 1, 0, 2293767, 1, 0, 2293768, 1, 0, 2293769, 1, 0, 2293770, 1, 0, 2293771, 1, 0, 2293772, 1, 0, 2359308, 1, 0, 2359307, 1, 0, 2359306, 1, 0, 2359305, 1, 0, 2359304, 1, 0, 2359303, 1, 0, 2359302, 1, 0, 2359301, 1, 0, 2359300, 1, 0, 2359299, 1, 0, 2359298, 1, 0, 2359297, 1, 0, 2228236, 2, 0, 2162689, 2, 0, 2228225, 1, 0, 2162688, 0, 0, 2228223, 0, 0, 2293759, 1, 0, 2228224, 1, 0, 2293760, 1, 0, 2359295, 1, 0, 2424831, 1, 0, 2359296, 1, 0, 2031625, 2, 805306368, 2031626, 2, 536870912, 1966089, 0, 1610612736, 1900553, 0, 1610612736, 1966090, 0, 1342177280, 1900554, 0, 1342177280, 2490367, 1, 0, 2424832, 1, 0, 2424833, 1, 0, 2424834, 1, 0, 2424835, 1, 0, 2424836, 1, 0, 2424837, 1, 0, 2424838, 1, 0, 2424839, 1, 0, 2424840, 1, 0, 2424841, 1, 0, 2424842, 1, 0, 2424843, 1, 0, 2424844, 1, 0, 2490380, 1, 0, 2490379, 1, 0, 2490378, 1, 0, 2490377, 1, 0, 2490376, 1, 0, 2490375, 1, 0, 2490374, 1, 0, 2490373, 1, 0, 2490372, 1, 0, 2490371, 1, 0, 2490370, 1, 0, 2490369, 1, 0, 2490368, 1, 0, 2555903, 1, 0, 2621439, 1, 0, 2555904, 1, 0, 2555905, 1, 0, 2555906, 1, 0, 2555907, 1, 0, 2555908, 1, 0, 2555909, 1, 0, 2555910, 1, 0, 2555911, 1, 0, 2555912, 1, 0, 2555913, 1, 0, 2555914, 1, 0, 2555915, 1, 0, 2555916, 1, 0, 2621452, 1, 0, 2621451, 1, 0, 2621450, 1, 0, 2621449, 1, 0, 2621448, 1, 0, 2621447, 1, 0, 2621446, 1, 0, 2621445, 1, 0, 2621444, 1, 0, 2621443, 1, 0, 2621442, 1, 0, 2621441, 1, 0, 2621440, 1, 0, 2686975, 1, 0, 1835017, 0, 1610612736, 1769481, 0, 1610612736, 1835018, 0, 1342177280, 1769482, 0, 1342177280)
 
 [node name="TPA" type="Area2D" parent="."]
-script = ExtResource("8_oret2")
+script = SubResource("GDScript_o1ksx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TPA"]
 
 [node name="TPB" type="Area2D" parent="."]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TPB"]
+
+[node name="Objects" type="Node2D" parent="."]
+
+[node name="AnimatedSprite2D" parent="Objects" instance=ExtResource("1_cn5cr")]
+position = Vector2(-5, 521)
+scale = Vector2(1.10714, 1.10714)
+autoplay = "Flower"
+frame = 6
+frame_progress = 0.00932383
+
+[node name="AnimatedSprite2D8" parent="Objects" instance=ExtResource("1_cn5cr")]
+position = Vector2(58, 537)
+scale = Vector2(1.10714, 1.10714)
+autoplay = "Flower"
+frame = 6
+frame_progress = 0.00932383
+
+[node name="AnimatedSprite2D3" parent="Objects" instance=ExtResource("3_fnhqv")]
+position = Vector2(135, 534)
+scale = Vector2(1.34375, 1.34375)
+autoplay = "wide grass"
+
+[node name="AnimatedSprite2D6" parent="Objects" instance=ExtResource("3_fnhqv")]
+position = Vector2(5, 518)
+scale = Vector2(1.34375, 1.34375)
+autoplay = "wide grass"
+
+[node name="AnimatedSprite2D7" parent="Objects" instance=ExtResource("3_fnhqv")]
+position = Vector2(47, 533)
+scale = Vector2(1.34375, 1.34375)
+autoplay = "wide grass"
+
+[node name="AnimatedSprite2D2" parent="Objects" instance=ExtResource("2_pyyoy")]
+position = Vector2(38, 538)
+frame = 2
+frame_progress = 0.0
+script = SubResource("GDScript_gusme")
+
+[node name="AnimatedSprite2D4" parent="Objects" instance=ExtResource("2_pyyoy")]
+position = Vector2(20, 522)
+frame = 2
+frame_progress = 0.0
+script = SubResource("GDScript_gusme")
+
+[node name="AnimatedSprite2D5" parent="Objects" instance=ExtResource("2_pyyoy")]
+position = Vector2(-12, 523)
+frame = 2
+frame_progress = 0.0
+script = SubResource("GDScript_gusme")
+
+[node name="Surface" type="Area2D" parent="."]
+script = ExtResource("9_iyhg8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Surface"]
+position = Vector2(191, 542)
+shape = SubResource("RectangleShape2D_52g3q")
