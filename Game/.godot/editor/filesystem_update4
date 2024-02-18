@@ -1,8 +1,5 @@
 res://main_char.tscn
-res://Scripts/Player_Camera.gd
 res://main.tscn
-res://Scripts/Character.gd
-res://Scripts/Grass.gd
-res://Scripts/anim_handler.gd
 res://Scenes/Grass.tscn
 res://flower.tscn
+res://Scripts/Character.gd

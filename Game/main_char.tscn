@@ -1,7 +1,29 @@
 [gd_scene load_steps=4 format=3 uid="uid://c8ws5idwflt67"]
 
 [ext_resource type="Script" path="res://Scripts/Character.gd" id="1_y7s6a"]
-[ext_resource type="Texture2D" uid="uid://dkho35mfti8wg" path="res://Character.png" id="2_t7uk0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r7fp1"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"idle",
+"speed": 1.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"jump_end",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"jump_start",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_symls"]
 radius = 5.15
@@ -10,15 +32,18 @@ height = 22.1
 [node name="MainChar" type="CharacterBody2D"]
 position = Vector2(251, 645)
 script = ExtResource("1_y7s6a")
+speed = 75.0
+jump_velocity = -150.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(113, 526)
+sprite_frames = SubResource("SpriteFrames_r7fp1")
+animation = &"idle"
+autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(110, 526)
 shape = SubResource("CapsuleShape2D_symls")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(113, 525)
-texture = ExtResource("2_t7uk0")
-hframes = 2
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(114, 525)

@@ -1,3 +1,4 @@
+AnimatedSprite2D
 GPUParticles2D
 Camera2D
 RemoteTransform2D
@@ -5,7 +6,6 @@ Sprite2D
 AnimationPlayer
 TileMap
 Timer
-AnimatedSprite2D
 Area2D
 MenuBar
 CanvasModulate
