@@ -1,3 +1,6 @@
+AnimationPlayer
+TileMap
+Camera2D
 Timer
 Sprite2D
 AnimatedSprite2D
@@ -6,8 +9,6 @@ MenuBar
 CanvasModulate
 Container
 CollisionShape2D
-Camera2D
-TileMap
 CharacterBody2D
 GPUParticles2D
 CPUParticles2D

@@ -1,13 +1,16 @@
-[gd_scene load_steps=13 format=3 uid="uid://dkinti5dvjm5q"]
+[gd_scene load_steps=16 format=3 uid="uid://dkinti5dvjm5q"]
 
 [ext_resource type="PackedScene" uid="uid://baabn48f6q0qf" path="res://flower.tscn" id="1_cn5cr"]
+[ext_resource type="Script" path="res://Scripts/anim_handler.gd" id="1_xtk4t"]
 [ext_resource type="PackedScene" uid="uid://crs1qne0rtnsf" path="res://Scenes/Grass.tscn" id="2_pyyoy"]
 [ext_resource type="PackedScene" uid="uid://dxy11jayr3sq4" path="res://widegrass.tscn" id="3_fnhqv"]
+[ext_resource type="Script" path="res://Scripts/Grass.gd" id="3_vgsid"]
 [ext_resource type="PackedScene" uid="uid://c8ws5idwflt67" path="res://main_char.tscn" id="4_q1odw"]
 [ext_resource type="Texture2D" uid="uid://6gcqelym3m8g" path="res://Sprites/Environment/tile.png" id="5_v6nsn"]
 [ext_resource type="Texture2D" uid="uid://pmvfhg7jcfkg" path="res://Sprites/Environment/Dirt.png" id="6_jywvv"]
 [ext_resource type="Texture2D" uid="uid://c41rgk8t4xdqv" path="res://Sprites/Environment/CornerTile.png" id="7_oe5ig"]
 [ext_resource type="Script" path="res://Scripts/TPA.gd" id="8_oret2"]
+[ext_resource type="Script" path="res://Scripts/Player_Camera.gd" id="9_m300g"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2k5fa"]
 texture = ExtResource("5_v6nsn")
@@ -15,6 +18,7 @@ texture_region_size = Vector2i(18, 26)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
 1:0/0 = 0
 1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:0/0/physics_layer_0/angular_velocity = 0.0
@@ -47,6 +51,7 @@ texture_region_size = Vector2i(18, 26)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -8, 8, 8, 8, 8, -8)
 1:0/0 = 0
 1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:0/0/physics_layer_0/angular_velocity = 0.0
@@ -64,6 +69,7 @@ sources/1 = SubResource("TileSetAtlasSource_5v4t0")
 sources/2 = SubResource("TileSetAtlasSource_kwifr")
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_xtk4t")
 
 [node name="AnimatedSprite2D" parent="." instance=ExtResource("1_cn5cr")]
 position = Vector2(93, 537)
@@ -73,19 +79,22 @@ frame_progress = 0.00932383
 
 [node name="AnimatedSprite2D2" parent="." instance=ExtResource("2_pyyoy")]
 position = Vector2(63, 538)
-frame_progress = 0.942599
+frame = 2
+frame_progress = 0.0
+script = ExtResource("3_vgsid")
 
 [node name="AnimatedSprite2D3" parent="." instance=ExtResource("3_fnhqv")]
 position = Vector2(78, 534)
 scale = Vector2(1.34375, 1.34375)
 
-[node name="MainChar" parent="." instance=ExtResource("4_q1odw")]
+[node name="Player" parent="." instance=ExtResource("4_q1odw")]
 position = Vector2(-4, 6)
 
-[node name="TileMap" type="TileMap" parent="."]
+[node name="Environment" type="TileMap" parent="."]
 texture_filter = 1
 tile_set = SubResource("TileSet_k07s7")
 format = 2
+layer_0/name = "Ground"
 layer_0/tile_data = PackedInt32Array(2228226, 0, 0, 2228227, 0, 0, 2228228, 0, 0, 2228229, 0, 0, 2228230, 0, 0, 2228231, 0, 0, 2228232, 0, 0, 2228233, 0, 0, 2228234, 0, 0, 2228235, 0, 0, 2293761, 1, 0, 2293762, 1, 0, 2293763, 1, 0, 2293764, 1, 0, 2293765, 1, 0, 2293766, 1, 0, 2293767, 1, 0, 2293768, 1, 0, 2293769, 1, 0, 2293770, 1, 0, 2293771, 1, 0, 2293772, 1, 0, 2359308, 1, 0, 2359307, 1, 0, 2359306, 1, 0, 2359305, 1, 0, 2359304, 1, 0, 2359303, 1, 0, 2359302, 1, 0, 2359301, 1, 0, 2359300, 1, 0, 2359299, 1, 0, 2359298, 1, 0, 2359297, 1, 0, 2228236, 2, 0, 2228225, 2, 268435456)
 
 [node name="TPA" type="Area2D" parent="."]
@@ -98,3 +107,8 @@ script = ExtResource("8_oret2")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TPB"]
 
 [node name="Timer" type="Timer" parent="."]
+
+[node name="Player_Camera" type="Camera2D" parent="."]
+position = Vector2(117, 531)
+zoom = Vector2(1.485, 1.485)
+script = ExtResource("9_m300g")
