@@ -1,5 +1,4 @@
-res://main_char.tscn
 res://main.tscn
+res://main_char.tscn
 res://Scenes/Grass.tscn
 res://flower.tscn
-res://Scripts/Character.gd
