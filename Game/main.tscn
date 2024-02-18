@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://dkinti5dvjm5q"]
+[gd_scene load_steps=15 format=3 uid="uid://dkinti5dvjm5q"]
 
 [ext_resource type="PackedScene" uid="uid://baabn48f6q0qf" path="res://flower.tscn" id="1_cn5cr"]
 [ext_resource type="Script" path="res://Scripts/anim_handler.gd" id="1_xtk4t"]
@@ -10,7 +10,6 @@
 [ext_resource type="Texture2D" uid="uid://pmvfhg7jcfkg" path="res://Sprites/Environment/Dirt.png" id="6_jywvv"]
 [ext_resource type="Texture2D" uid="uid://c41rgk8t4xdqv" path="res://Sprites/Environment/CornerTile.png" id="7_oe5ig"]
 [ext_resource type="Script" path="res://Scripts/TPA.gd" id="8_oret2"]
-[ext_resource type="Script" path="res://Scripts/Player_Camera.gd" id="9_m300g"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2k5fa"]
 texture = ExtResource("5_v6nsn")
@@ -105,10 +104,3 @@ script = ExtResource("8_oret2")
 [node name="TPB" type="Area2D" parent="."]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TPB"]
-
-[node name="Timer" type="Timer" parent="."]
-
-[node name="Player_Camera" type="Camera2D" parent="."]
-position = Vector2(117, 531)
-zoom = Vector2(1.485, 1.485)
-script = ExtResource("9_m300g")

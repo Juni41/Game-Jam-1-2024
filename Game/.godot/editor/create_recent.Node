@@ -1,8 +1,9 @@
+Camera2D
+RemoteTransform2D
+Sprite2D
 AnimationPlayer
 TileMap
-Camera2D
 Timer
-Sprite2D
 AnimatedSprite2D
 Area2D
 MenuBar
@@ -11,4 +12,3 @@ Container
 CollisionShape2D
 CharacterBody2D
 GPUParticles2D
-CPUParticles2D
