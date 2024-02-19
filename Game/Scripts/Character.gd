@@ -37,8 +37,7 @@ func update_animation():
 		
 		else:
 			animated_sprite.play("idle")
-		if direction.y < 0:
-			animated_sprite.play("jump")     
+		   
 func update_direction_h():
 	if direction.x > 0:
 		animated_sprite.flip_h = false
