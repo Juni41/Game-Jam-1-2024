@@ -4,3 +4,4 @@ res://Scenes/Grass.tscn
 res://Scenes/flower.tscn
 res://popup.tscn
 res://Inventory.tscn
+res://Scripts/Character.gd
