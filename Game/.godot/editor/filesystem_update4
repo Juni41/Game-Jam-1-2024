@@ -1,6 +1,7 @@
-res://main.tscn
+res://Scripts/Character.gd
 res://Scenes/main_char.tscn
+res://main.tscn
 res://Scenes/Grass.tscn
 res://Scenes/flower.tscn
 res://popup.tscn
-res://Scripts/Character.gd
+res://Inventory.tscn

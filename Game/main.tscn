@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://dkinti5dvjm5q"]
+[gd_scene load_steps=17 format=3 uid="uid://dkinti5dvjm5q"]
 
 [ext_resource type="PackedScene" uid="uid://baabn48f6q0qf" path="res://Scenes/flower.tscn" id="1_cn5cr"]
 [ext_resource type="PackedScene" uid="uid://crs1qne0rtnsf" path="res://Scenes/Grass.tscn" id="2_pyyoy"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://6gcqelym3m8g" path="res://Sprites/Environment/tile.png" id="5_v6nsn"]
 [ext_resource type="Texture2D" uid="uid://pmvfhg7jcfkg" path="res://Sprites/Environment/Dirt.png" id="6_jywvv"]
 [ext_resource type="Texture2D" uid="uid://c41rgk8t4xdqv" path="res://Sprites/Environment/CornerTile.png" id="7_oe5ig"]
+[ext_resource type="PackedScene" uid="uid://bn4plh6r5g5mm" path="res://Inventory.tscn" id="9_2prhb"]
 [ext_resource type="Script" path="res://Surface.gd" id="9_iyhg8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2k5fa"]
@@ -84,7 +85,6 @@ size = Vector2(140, 228)
 
 [node name="Player" parent="." instance=ExtResource("4_q1odw")]
 position = Vector2(-4, 6)
-jump_velocity = -180.0
 
 [node name="Environment" type="TileMap" parent="."]
 texture_filter = 1
@@ -157,3 +157,5 @@ script = ExtResource("9_iyhg8")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Surface"]
 position = Vector2(182, 541)
 shape = SubResource("RectangleShape2D_52g3q")
+
+[node name="Node2D" parent="." instance=ExtResource("9_2prhb")]
