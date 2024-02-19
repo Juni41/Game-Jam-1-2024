@@ -155,7 +155,7 @@ script = SubResource("GDScript_gusme")
 script = ExtResource("9_iyhg8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Surface"]
-position = Vector2(182, 541)
+position = Vector2(190, 539)
 shape = SubResource("RectangleShape2D_52g3q")
 
 [node name="Node2D" parent="." instance=ExtResource("9_2prhb")]
