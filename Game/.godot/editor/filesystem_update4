@@ -1,7 +1,5 @@
 res://main.tscn
-res://main_char.tscn
+res://Scenes/main_char.tscn
 res://Scenes/Grass.tscn
-res://flower.tscn
-res://Popup.gd
-res://Surface.gd
+res://Scenes/flower.tscn
 res://popup.tscn
