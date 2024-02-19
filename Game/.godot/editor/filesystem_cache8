@@ -1,24 +1,26 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1708303916
+::res://::1708304893
 icon.svg::CompressedTexture2D::8904118163723717515::1708303868::1708303868::1::::<><>::
-main.tscn::PackedScene::7878489227177933876::1708303868::0::1::::<><>::uid://baabn48f6q0qf::::res://Scenes/flower.tscn<>uid://crs1qne0rtnsf::::res://Scenes/Grass.tscn<>uid://dxy11jayr3sq4::::res://Scenes/widegrass.tscn<>uid://c8ws5idwflt67::::res://Scenes/main_char.tscn<>uid://6gcqelym3m8g::::res://Sprites/Environment/tile.png<>uid://pmvfhg7jcfkg::::res://Sprites/Environment/Dirt.png<>uid://c41rgk8t4xdqv::::res://Sprites/Environment/CornerTile.png<>res://Surface.gd
+main.tscn::PackedScene::7878489227177933876::1708304016::0::1::::<><>::uid://baabn48f6q0qf::::res://Scenes/flower.tscn<>uid://crs1qne0rtnsf::::res://Scenes/Grass.tscn<>uid://dxy11jayr3sq4::::res://Scenes/widegrass.tscn<>uid://c8ws5idwflt67::::res://Scenes/main_char.tscn<>uid://6gcqelym3m8g::::res://Sprites/Environment/tile.png<>uid://pmvfhg7jcfkg::::res://Sprites/Environment/Dirt.png<>uid://c41rgk8t4xdqv::::res://Sprites/Environment/CornerTile.png<>res://Surface.gd
 Popup.gd::GDScript::-1::1708303868::0::1::::<>Popup<>::
-popup.tscn::PackedScene::3289960977505956704::1708303868::0::1::::<><>::res://popup.gd<>uid://4okwckfclbvd::::res://Silver.ttf
+popup.tscn::PackedScene::3289960977505956704::1708304016::0::1::::<><>::res://popup.gd<>uid://4okwckfclbvd::::res://Silver.ttf
 Silver.ttf::FontFile::2065024332178376809::1708303868::1708303868::1::::<><>::
 Surface.gd::GDScript::-1::1708303868::0::1::::<>Area2D<>::
 ::res://Audio/::1708303868
 Intro song.mp3::AudioStreamMP3::8123108881411709353::1708303868::1708303868::1::::<><>::
-::res://Scenes/::1708303868
-flower.tscn::PackedScene::2386506190431592921::1708303868::0::1::::<><>::uid://ctqt40apd54sb::::res://Sprites/Environment/flower.png
-Grass.tscn::PackedScene::6004818413462370277::1708303868::0::1::::<><>::uid://4jxgwvveoens::::res://Sprites/Environment/Grass.png
-main_char.tscn::PackedScene::7135636423545459890::1708303868::0::1::::<><>::res://Scripts/Character.gd<>uid://ca7in2cmks3g3::::res://Sprites/Characters/walkcyclefinal.png<>uid://by4fyon6qf1de::::res://Sprites/Characters/idle.png
+::res://Scenes/::1708304870
+flower.tscn::PackedScene::2386506190431592921::1708304016::0::1::::<><>::uid://ctqt40apd54sb::::res://Sprites/Environment/flower.png
+Grass.tscn::PackedScene::6004818413462370277::1708304016::0::1::::<><>::uid://4jxgwvveoens::::res://Sprites/Environment/Grass.png
+mage_jump.png::CompressedTexture2D::4935750112095406057::1708304869::1708304870::1::::<><>::
+main_char.tscn::PackedScene::7135636423545459890::1708304016::0::1::::<><>::res://Scripts/Character.gd<>uid://ca7in2cmks3g3::::res://Sprites/Characters/walkcyclefinal.png<>uid://by4fyon6qf1de::::res://Sprites/Characters/idle.png
 node_2d.tscn::PackedScene::3356597265597077870::1708303868::0::1::::<><>::
 widegrass.tscn::PackedScene::8824776067129379061::1708303868::0::1::::<><>::uid://dtwjq61f54331::::res://Sprites/Environment/wide grass.png
 ::res://Scripts/::1708303868
 Character.gd::GDScript::-1::1708303868::0::1::::<>CharacterBody2D<>::
 ::res://Sprites/::1708303868
-::res://Sprites/Characters/::1708303868
+::res://Sprites/Characters/::1708304893
 idle.png::CompressedTexture2D::4131167086730627226::1708303868::1708303868::1::::<><>::
+mage_jump.png::CompressedTexture2D::5203255589411136356::1708304891::1708304893::1::::<><>::
 walkcyclefinal.png::CompressedTexture2D::4839411828558401544::1708303868::1708303868::1::::<><>::
 ::res://Sprites/Environment/::1708303868
 CornerTile.png::CompressedTexture2D::6863035135250136681::1708303868::1708303868::1::::<><>::

@@ -3,3 +3,4 @@ res://Scenes/main_char.tscn
 res://Scenes/Grass.tscn
 res://Scenes/flower.tscn
 res://popup.tscn
+res://Scripts/Character.gd
