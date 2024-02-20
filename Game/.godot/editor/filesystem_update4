@@ -1,6 +1,8 @@
+res://UI/pause_menu.tscn
 res://main.tscn
 res://Scenes/main_char.tscn
 res://Scenes/Grass.tscn
 res://Scenes/flower.tscn
 res://popup.tscn
 res://Inventory.tscn
+res://Magik/ability_1.tscn

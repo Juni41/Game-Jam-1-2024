@@ -1,14 +1,16 @@
-[gd_scene load_steps=17 format=3 uid="uid://dkinti5dvjm5q"]
+[gd_scene load_steps=19 format=3 uid="uid://dkinti5dvjm5q"]
 
 [ext_resource type="PackedScene" uid="uid://baabn48f6q0qf" path="res://Scenes/flower.tscn" id="1_cn5cr"]
 [ext_resource type="PackedScene" uid="uid://crs1qne0rtnsf" path="res://Scenes/Grass.tscn" id="2_pyyoy"]
 [ext_resource type="PackedScene" uid="uid://dxy11jayr3sq4" path="res://Scenes/widegrass.tscn" id="3_fnhqv"]
 [ext_resource type="PackedScene" uid="uid://c8ws5idwflt67" path="res://Scenes/main_char.tscn" id="4_q1odw"]
+[ext_resource type="PackedScene" uid="uid://cqnrwn042lh5" path="res://Magik/ability_1.tscn" id="5_ibafe"]
 [ext_resource type="Texture2D" uid="uid://6gcqelym3m8g" path="res://Sprites/Environment/tile.png" id="5_v6nsn"]
 [ext_resource type="Texture2D" uid="uid://pmvfhg7jcfkg" path="res://Sprites/Environment/Dirt.png" id="6_jywvv"]
 [ext_resource type="Texture2D" uid="uid://c41rgk8t4xdqv" path="res://Sprites/Environment/CornerTile.png" id="7_oe5ig"]
 [ext_resource type="PackedScene" uid="uid://bn4plh6r5g5mm" path="res://Inventory.tscn" id="9_2prhb"]
 [ext_resource type="Script" path="res://Surface.gd" id="9_iyhg8"]
+[ext_resource type="PackedScene" uid="uid://0wroaif1f0jr" path="res://UI/pause_menu.tscn" id="11_mf3pw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2k5fa"]
 texture = ExtResource("5_v6nsn")
@@ -76,15 +78,13 @@ func _on_TeleporterA_body_entered(body):
 		body.position = destination_teleporter.position
 "
 
-[sub_resource type="GDScript" id="GDScript_gusme"]
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_52g3q"]
 size = Vector2(140, 228)
 
-[node name="Main" type="Node2D"]
+[sub_resource type="GDScript" id="GDScript_gusme"]
 
-[node name="Player" parent="." instance=ExtResource("4_q1odw")]
-position = Vector2(-4, 6)
+[node name="Main" type="Node2D"]
+process_mode = 3
 
 [node name="Environment" type="TileMap" parent="."]
 texture_filter = 1
@@ -102,55 +102,6 @@ script = SubResource("GDScript_o1ksx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TPB"]
 
-[node name="Objects" type="Node2D" parent="."]
-
-[node name="AnimatedSprite2D" parent="Objects" instance=ExtResource("1_cn5cr")]
-position = Vector2(-5, 521)
-scale = Vector2(1.10714, 1.10714)
-autoplay = "Flower"
-frame = 6
-frame_progress = 0.00932383
-
-[node name="AnimatedSprite2D8" parent="Objects" instance=ExtResource("1_cn5cr")]
-position = Vector2(58, 537)
-scale = Vector2(1.10714, 1.10714)
-autoplay = "Flower"
-frame = 6
-frame_progress = 0.00932383
-
-[node name="AnimatedSprite2D3" parent="Objects" instance=ExtResource("3_fnhqv")]
-position = Vector2(135, 534)
-scale = Vector2(1.34375, 1.34375)
-autoplay = "wide grass"
-
-[node name="AnimatedSprite2D6" parent="Objects" instance=ExtResource("3_fnhqv")]
-position = Vector2(5, 518)
-scale = Vector2(1.34375, 1.34375)
-autoplay = "wide grass"
-
-[node name="AnimatedSprite2D7" parent="Objects" instance=ExtResource("3_fnhqv")]
-position = Vector2(47, 533)
-scale = Vector2(1.34375, 1.34375)
-autoplay = "wide grass"
-
-[node name="AnimatedSprite2D2" parent="Objects" instance=ExtResource("2_pyyoy")]
-position = Vector2(38, 538)
-frame = 2
-frame_progress = 0.0
-script = SubResource("GDScript_gusme")
-
-[node name="AnimatedSprite2D4" parent="Objects" instance=ExtResource("2_pyyoy")]
-position = Vector2(20, 522)
-frame = 2
-frame_progress = 0.0
-script = SubResource("GDScript_gusme")
-
-[node name="AnimatedSprite2D5" parent="Objects" instance=ExtResource("2_pyyoy")]
-position = Vector2(-12, 523)
-frame = 2
-frame_progress = 0.0
-script = SubResource("GDScript_gusme")
-
 [node name="Surface" type="Area2D" parent="."]
 script = ExtResource("9_iyhg8")
 
@@ -158,4 +109,65 @@ script = ExtResource("9_iyhg8")
 position = Vector2(190, 539)
 shape = SubResource("RectangleShape2D_52g3q")
 
-[node name="Node2D" parent="." instance=ExtResource("9_2prhb")]
+[node name="Pausable" type="Node2D" parent="."]
+
+[node name="Ability1" parent="Pausable" instance=ExtResource("5_ibafe")]
+
+[node name="Node2D" parent="Pausable" instance=ExtResource("9_2prhb")]
+
+[node name="Objects" type="Node2D" parent="Pausable"]
+
+[node name="AnimatedSprite2D" parent="Pausable/Objects" instance=ExtResource("1_cn5cr")]
+position = Vector2(-5, 521)
+scale = Vector2(1.10714, 1.10714)
+autoplay = "Flower"
+frame = 6
+frame_progress = 0.00932383
+
+[node name="AnimatedSprite2D8" parent="Pausable/Objects" instance=ExtResource("1_cn5cr")]
+position = Vector2(58, 537)
+scale = Vector2(1.10714, 1.10714)
+autoplay = "Flower"
+frame = 6
+frame_progress = 0.00932383
+
+[node name="AnimatedSprite2D3" parent="Pausable/Objects" instance=ExtResource("3_fnhqv")]
+position = Vector2(135, 534)
+scale = Vector2(1.34375, 1.34375)
+autoplay = "wide grass"
+
+[node name="AnimatedSprite2D6" parent="Pausable/Objects" instance=ExtResource("3_fnhqv")]
+position = Vector2(5, 518)
+scale = Vector2(1.34375, 1.34375)
+autoplay = "wide grass"
+
+[node name="AnimatedSprite2D7" parent="Pausable/Objects" instance=ExtResource("3_fnhqv")]
+position = Vector2(47, 533)
+scale = Vector2(1.34375, 1.34375)
+autoplay = "wide grass"
+
+[node name="AnimatedSprite2D2" parent="Pausable/Objects" instance=ExtResource("2_pyyoy")]
+position = Vector2(38, 538)
+frame = 2
+frame_progress = 0.0
+script = SubResource("GDScript_gusme")
+
+[node name="AnimatedSprite2D4" parent="Pausable/Objects" instance=ExtResource("2_pyyoy")]
+position = Vector2(20, 522)
+frame = 2
+frame_progress = 0.0
+script = SubResource("GDScript_gusme")
+
+[node name="AnimatedSprite2D5" parent="Pausable/Objects" instance=ExtResource("2_pyyoy")]
+position = Vector2(-12, 523)
+frame = 2
+frame_progress = 0.0
+script = SubResource("GDScript_gusme")
+
+[node name="Player" parent="Pausable" instance=ExtResource("4_q1odw")]
+position = Vector2(-4, 6)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("11_mf3pw")]
+process_mode = 2
