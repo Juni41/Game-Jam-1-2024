@@ -168,6 +168,7 @@ script = SubResource("GDScript_gusme")
 position = Vector2(-4, 6)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("11_mf3pw")]
 process_mode = 2
