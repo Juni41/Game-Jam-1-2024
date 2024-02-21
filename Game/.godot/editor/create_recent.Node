@@ -1,3 +1,4 @@
+Sprite2D
 Button
 Label
 VBoxContainer
@@ -12,4 +13,3 @@ AnimationTree
 CollisionShape2D
 Area2D
 Popup
-GPUParticles2D
