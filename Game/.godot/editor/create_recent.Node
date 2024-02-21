@@ -1,3 +1,5 @@
+Area2D
+Polygon2D
 Sprite2D
 Button
 Label
@@ -11,5 +13,3 @@ Node2D
 AnimatedSprite2D
 AnimationTree
 CollisionShape2D
-Area2D
-Popup

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8wsrp1jjgxqs"]
+
+[ext_resource type="Script" path="res://Scripts/damaging.gd" id="1_5mbc3"]
+[ext_resource type="Texture2D" uid="uid://sc5psl5mvup1" path="res://Sprites/Environment/Spikes1.png" id="1_halvb"]
+
+[node name="Damaging" type="Node2D"]
+script = ExtResource("1_5mbc3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_halvb")
+
+[node name="Area2D" type="Area2D" parent="."]
+monitorable = false
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(-1, 10, 1, 14, 4, 7, 6, 3, 9, 1, 10, 7, 11, 13, 12, 16, -15, 16, -15, 12, -14, 7, -15, 3, -12, 2, -10, 7, -8, 13, -4, 6, -1, 1, 1, 4)
