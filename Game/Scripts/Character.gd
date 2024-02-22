@@ -48,4 +48,9 @@ func _physics_process(delta):
 	
 	move_and_slide()
 
+func _on_hurt_box_area_entered(area):
+	if area.name == "hitBox":
+		CURRENT_HEALTH -= 1
+		print_debug()
+		
 	

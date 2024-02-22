@@ -1,2 +1,2 @@
-res://Scenes/main_char.tscn
+res://main.tscn
 res://Scripts/Character.gd
