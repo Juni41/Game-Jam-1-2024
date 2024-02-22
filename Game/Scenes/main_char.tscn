@@ -1,10 +1,9 @@
-[gd_scene load_steps=16 format=3 uid="uid://c8ws5idwflt67"]
+[gd_scene load_steps=15 format=3 uid="uid://c8ws5idwflt67"]
 
 [ext_resource type="Script" path="res://Scripts/Character.gd" id="1_y7s6a"]
 [ext_resource type="Texture2D" uid="uid://ca7in2cmks3g3" path="res://Sprites/Characters/walkcyclefinal.png" id="2_jwsu7"]
 [ext_resource type="Texture2D" uid="uid://by4fyon6qf1de" path="res://Sprites/Characters/idle.png" id="2_oeh22"]
 [ext_resource type="Texture2D" uid="uid://c1cpni5svlhp8" path="res://Sprites/Characters/mage_jumpnew.png" id="2_pi4p1"]
-[ext_resource type="PackedScene" uid="uid://ssk4w3ncu0xb" path="res://healthbar.tscn" id="5_dcq0u"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0xcc3"]
 atlas = ExtResource("2_pi4p1")
@@ -120,13 +119,6 @@ collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hurtBox"]
 shape = SubResource("CapsuleShape2D_mw060")
-
-[node name="Healthbar" parent="." instance=ExtResource("5_dcq0u")]
-offset_left = 89.0
-offset_top = 503.0
-offset_right = 233.0
-offset_bottom = 526.0
-scale = Vector2(0.3, 0.3)
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="area_entered" from="hurtBox" to="." method="_on_hurt_box_area_entered"]

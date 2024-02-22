@@ -4,7 +4,8 @@ extends CharacterBody2D
 @export var JUMP_FORCE : int = 175
 @export var GRAVITY : int = 750
 @export var MAX_HEALTH : int = 5
-@onready var  CURRENT_HEALTH: int = MAX_HEALTH
+
+
 
 
 func _physics_process(delta):
