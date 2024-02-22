@@ -13,16 +13,18 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_k80dr"]
-size = Vector2(46, 46.5)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fdrya"]
+size = Vector2(32, 20)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(690.5, 388.5)
-scale = Vector2(0.367188, 0.367188)
+position = Vector2(677, 402)
+scale = Vector2(0.15625, 0.15625)
 sprite_frames = SubResource("SpriteFrames_c3qpc")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(696, 388.25)
-shape = SubResource("RectangleShape2D_k80dr")
+[node name="hitBox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitBox"]
+position = Vector2(679, 402)
+shape = SubResource("RectangleShape2D_fdrya")
