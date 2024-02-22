@@ -46,11 +46,6 @@ animations = [{
 "name": &"Fall",
 "speed": 3.0
 }, {
-"frames": [],
-"loop": true,
-"name": &"crouch",
-"speed": 5.0
-}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_w12r6")
@@ -101,7 +96,7 @@ script = ExtResource("1_y7s6a")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(110, 522)
 sprite_frames = SubResource("SpriteFrames_r7fp1")
-animation = &"jump"
+animation = &"Fall"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

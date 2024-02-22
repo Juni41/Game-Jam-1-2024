@@ -179,6 +179,11 @@ texture = ExtResource("10_2d5xg")
 [node name="Player" parent="Pausable" instance=ExtResource("4_q1odw")]
 position = Vector2(-4, 6)
 
+[node name="dash_timer" type="Timer" parent="Pausable/Player"]
+wait_time = 0.2
+
+[node name="dash_again_timer" type="Timer" parent="Pausable/Player"]
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 visible = false
 
@@ -187,3 +192,6 @@ process_mode = 2
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("15_4xfnc")
+
+[connection signal="timeout" from="Pausable/Player/dash_timer" to="Pausable/Player" method="_on_dash_timer_timeout"]
+[connection signal="timeout" from="Pausable/Player/dash_again_timer" to="Pausable/Player" method="_on_dash_again_timer_timeout"]

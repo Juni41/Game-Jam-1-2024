@@ -1,5 +1,5 @@
-AudioStreamPlayer2D
 Timer
+AudioStreamPlayer2D
 ProgressBar
 CollisionShape2D
 Area2D
@@ -12,4 +12,3 @@ Label
 VBoxContainer
 Container
 Panel
-Control
