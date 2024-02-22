@@ -1,2 +1,11 @@
 res://main.tscn
 res://Scripts/Character.gd
+res://character_body_2d.tscn
+res://Scenes/main_char.tscn
+res://Scenes/Grass.tscn
+res://Scenes/flower.tscn
+res://popup.tscn
+res://Scenes/Inventory.tscn
+res://Magik/ability_1.tscn
+res://UI/pause_menu.tscn
+res://character_body_2d.gd

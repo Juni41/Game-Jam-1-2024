@@ -1,4 +1,7 @@
+CollisionShape2D
 Area2D
+AnimatedSprite2D
+CharacterBody2D
 Polygon2D
 Sprite2D
 Button
@@ -9,7 +12,3 @@ Panel
 Control
 CanvasLayer
 CanvasGroup
-Node2D
-AnimatedSprite2D
-AnimationTree
-CollisionShape2D

@@ -24,7 +24,7 @@ func _physics_process(delta):
 		$AnimatedSprite2D.flip_h = false
 	elif direction == -1:
 		$AnimatedSprite2D.flip_h = true
-		
+	handleCollision()
 	
 	# Gravity
 	
@@ -47,10 +47,14 @@ func _physics_process(delta):
 	
 	
 	move_and_slide()
-
+func handleCollision():
+	for i in get_slide_collision_count():
+		var collision = get_slide_collision(i)
+		var collider = collision.get_collider()
+		print_debug()
 func _on_hurt_box_area_entered(area):
 	if area.name == "hitBox":
 		CURRENT_HEALTH -= 1
 		print_debug()
 		
-	
+
