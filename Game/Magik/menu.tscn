@@ -33,6 +33,9 @@ text = "Options"
 layout_mode = 2
 text = "Quit"
 
+[node name="TextEdit" type="TextEdit" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
 [connection signal="pressed" from="MarginContainer/VBoxContainer/play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
