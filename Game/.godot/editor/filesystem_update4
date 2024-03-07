@@ -1,9 +1,13 @@
+res://Magik/ability_1.tscn
 res://main.tscn
 res://Scenes/main_char.tscn
 res://Scenes/Grass.tscn
 res://Scenes/flower.tscn
 res://popup.tscn
 res://Scenes/Inventory.tscn
-res://Magik/ability_1.tscn
 res://UI/pause_menu.tscn
 res://healthbar.tscn
+res://Menu.gd
+res://Magik/menu.tscn
+res://Magik/options_menu.gd
+res://Magik/options_menu.tscn
