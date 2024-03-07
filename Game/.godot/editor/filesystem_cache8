@@ -1,31 +1,31 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1709842130
+::res://::1709842353
 character_body_2d.tscn::PackedScene::2605930371042604969::1709840517::0::1::::<><>::uid://dy4hr4gmufwvb::::res://icon.svg
 export_presets.cfg::TextFile::-1::1709840517::0::1::::<><>::
 healthbar.gd::GDScript::-1::1709840517::0::1::::<>ProgressBar<>::
-healthbar.tscn::PackedScene::1301218142370941267::1709842130::0::1::::<><>::res://healthbar.gd
+healthbar.tscn::PackedScene::1301218142370941267::1709842353::0::1::::<><>::res://healthbar.gd
 icon.svg::CompressedTexture2D::8904118163723717515::1709840517::1709840517::1::::<><>::
-main.tscn::PackedScene::7878489227177933876::1709842129::0::1::::<><>::uid://baabn48f6q0qf::::res://Scenes/flower.tscn<>uid://crs1qne0rtnsf::::res://Scenes/Grass.tscn<>uid://dxy11jayr3sq4::::res://Scenes/widegrass.tscn<>uid://c8ws5idwflt67::::res://Scenes/main_char.tscn<>uid://cqnrwn042lh5::::res://Magik/ability_1.tscn<>uid://6gcqelym3m8g::::res://Sprites/Environment/tile.png<>uid://pmvfhg7jcfkg::::res://Sprites/Environment/Dirt.png<>uid://c41rgk8t4xdqv::::res://Sprites/Environment/CornerTile.png<>uid://bn4plh6r5g5mm::::res://Scenes/Inventory.tscn<>res://Surface.gd<>uid://1onfm3nkksmc::::res://Sprites/Environment/rocc.png<>uid://0wroaif1f0jr::::res://UI/pause_menu.tscn
+main.tscn::PackedScene::7878489227177933876::1709842353::0::1::::<><>::uid://baabn48f6q0qf::::res://Scenes/flower.tscn<>uid://crs1qne0rtnsf::::res://Scenes/Grass.tscn<>uid://dxy11jayr3sq4::::res://Scenes/widegrass.tscn<>uid://c8ws5idwflt67::::res://Scenes/main_char.tscn<>uid://cqnrwn042lh5::::res://Magik/ability_1.tscn<>uid://6gcqelym3m8g::::res://Sprites/Environment/tile.png<>uid://pmvfhg7jcfkg::::res://Sprites/Environment/Dirt.png<>uid://c41rgk8t4xdqv::::res://Sprites/Environment/CornerTile.png<>uid://bn4plh6r5g5mm::::res://Scenes/Inventory.tscn<>res://Surface.gd<>uid://1onfm3nkksmc::::res://Sprites/Environment/rocc.png<>uid://0wroaif1f0jr::::res://UI/pause_menu.tscn
 Menu.gd::GDScript::-1::1709841533::0::1::::<>Control<>::
 Popup.gd::GDScript::-1::1709840517::0::1::::<>Popup<>::
-popup.tscn::PackedScene::3289960977505956704::1709842130::0::1::::<><>::res://popup.gd<>uid://4okwckfclbvd::::res://Silver.ttf
+popup.tscn::PackedScene::3289960977505956704::1709842353::0::1::::<><>::res://popup.gd<>uid://4okwckfclbvd::::res://Silver.ttf
 Silver.ttf::FontFile::2065024332178376809::1709840517::1709840517::1::::<><>::
 Surface.gd::GDScript::-1::1709840517::0::1::::<>Area2D<>::
 ::res://Audio/::1709840517
 Intro song.mp3::AudioStreamMP3::8123108881411709353::0::0::1::::<><>::
-::res://Magik/::1709842206
-ability_1.tscn::PackedScene::174228587515242560::1709842130::0::1::::<><>::
-menu.tscn::PackedScene::7972357429849585809::1709842206::0::1::::<><>::res://Menu.gd
-options_menu.tscn::PackedScene::554668167039368664::1709842204::0::1::::<><>::res://Magik/options_menu.gd
+::res://Magik/::1709842366
+ability_1.tscn::PackedScene::174228587515242560::1709842353::0::1::::<><>::
+menu.tscn::PackedScene::7972357429849585809::1709842366::0::1::::<><>::res://Menu.gd
+options_menu.tscn::PackedScene::554668167039368664::1709842353::0::1::::<><>::res://Magik/options_menu.gd
 Back.gd::GDScript::-1::1709841339::0::1::::<>Button<>::
 options_menu.gd::GDScript::-1::1709842129::0::1::::<>Control<>::
-::res://Scenes/::1709842130
+::res://Scenes/::1709842353
 damaging.tscn::PackedScene::4749192927140040174::1709840517::0::1::::<><>::res://Scripts/damaging.gd<>uid://sc5psl5mvup1::::res://Sprites/Environment/Spikes1.png
-flower.tscn::PackedScene::2386506190431592921::1709842129::0::1::::<><>::uid://ctqt40apd54sb::::res://Sprites/Environment/flower.png
-Grass.tscn::PackedScene::6004818413462370277::1709842129::0::1::::<><>::uid://4jxgwvveoens::::res://Sprites/Environment/Grass.png
-Inventory.tscn::PackedScene::3359673420844857484::1709842130::0::1::::<><>::
+flower.tscn::PackedScene::2386506190431592921::1709842353::0::1::::<><>::uid://ctqt40apd54sb::::res://Sprites/Environment/flower.png
+Grass.tscn::PackedScene::6004818413462370277::1709842353::0::1::::<><>::uid://4jxgwvveoens::::res://Sprites/Environment/Grass.png
+Inventory.tscn::PackedScene::3359673420844857484::1709842353::0::1::::<><>::
 mage_jump.png::CompressedTexture2D::4935750112095406057::1709840517::1709840517::1::::<><>::
-main_char.tscn::PackedScene::7135636423545459890::1709842129::0::1::::<><>::res://Scripts/Character.gd<>uid://ca7in2cmks3g3::::res://Sprites/Characters/walkcyclefinal.png<>uid://by4fyon6qf1de::::res://Sprites/Characters/idle.png<>uid://c1cpni5svlhp8::::res://Sprites/Characters/mage_jumpnew.png
+main_char.tscn::PackedScene::7135636423545459890::1709842353::0::1::::<><>::res://Scripts/Character.gd<>uid://ca7in2cmks3g3::::res://Sprites/Characters/walkcyclefinal.png<>uid://by4fyon6qf1de::::res://Sprites/Characters/idle.png<>uid://c1cpni5svlhp8::::res://Sprites/Characters/mage_jumpnew.png
 node_2d.tscn::PackedScene::3356597265597077870::1709840517::0::1::::<><>::
 widegrass.tscn::PackedScene::8824776067129379061::1709840517::0::1::::<><>::uid://dtwjq61f54331::::res://Sprites/Environment/wide grass.png
 ::res://Scripts/::1709840517
@@ -51,7 +51,7 @@ Spikes1.png::CompressedTexture2D::1269377201477368784::1709840517::1709840517::1
 spiky platform.png::CompressedTexture2D::4483964611285390224::1709840517::1709840517::1::::<><>::
 tile.png::CompressedTexture2D::2188390654185224696::1709840517::1709840517::1::::<><>::
 wide grass.png::CompressedTexture2D::8538843085085819690::1709840517::1709840517::1::::<><>::
-::res://UI/::1709842130
+::res://UI/::1709842353
 Menu.gd::GDScript::-1::1709840517::0::1::::<>Control<>::
 menu.tscn::PackedScene::5564510996836925087::1709840517::0::1::::<><>::res://Menu.gd
-pause_menu.tscn::PackedScene::1801194604152406031::1709842130::0::1::::<><>::uid://y6blh5rbe5et::::res://Sprites/Environment/menu.png<>uid://4okwckfclbvd::::res://Silver.ttf<>uid://cylb4fjk2xdjs::::res://Sprites/Environment/button.png
+pause_menu.tscn::PackedScene::1801194604152406031::1709842353::0::1::::<><>::uid://y6blh5rbe5et::::res://Sprites/Environment/menu.png<>uid://4okwckfclbvd::::res://Silver.ttf<>uid://cylb4fjk2xdjs::::res://Sprites/Environment/button.png
