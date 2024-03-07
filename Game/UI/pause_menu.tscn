@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://0wroaif1f0jr"]
+[gd_scene load_steps=7 format=3 uid="uid://0wroaif1f0jr"]
 
 [ext_resource type="Texture2D" uid="uid://y6blh5rbe5et" path="res://Sprites/Environment/menu.png" id="1_a21if"]
+[ext_resource type="Script" path="res://UI/pause_menu.gd" id="1_oa0ts"]
 [ext_resource type="FontFile" uid="uid://4okwckfclbvd" path="res://Silver.ttf" id="2_ir70p"]
 [ext_resource type="Texture2D" uid="uid://cylb4fjk2xdjs" path="res://Sprites/Environment/button.png" id="3_45fwd"]
 
@@ -20,6 +21,7 @@ offset_right = -45.0
 offset_bottom = -13.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_oa0ts")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
