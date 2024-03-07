@@ -13,10 +13,10 @@ Silver.ttf::FontFile::2065024332178376809::1709840517::1709840517::1::::<><>::
 Surface.gd::GDScript::-1::1709840517::0::1::::<>Area2D<>::
 ::res://Audio/::1709840517
 Intro song.mp3::AudioStreamMP3::8123108881411709353::0::0::1::::<><>::
-::res://Magik/::1709842130
+::res://Magik/::1709842206
 ability_1.tscn::PackedScene::174228587515242560::1709842130::0::1::::<><>::
-menu.tscn::PackedScene::7972357429849585809::1709842130::0::1::::<><>::res://Menu.gd
-options_menu.tscn::PackedScene::554668167039368664::1709842130::0::1::::<><>::res://Magik/options_menu.gd
+menu.tscn::PackedScene::7972357429849585809::1709842206::0::1::::<><>::res://Menu.gd
+options_menu.tscn::PackedScene::554668167039368664::1709842204::0::1::::<><>::res://Magik/options_menu.gd
 Back.gd::GDScript::-1::1709841339::0::1::::<>Button<>::
 options_menu.gd::GDScript::-1::1709842129::0::1::::<>Control<>::
 ::res://Scenes/::1709842130
