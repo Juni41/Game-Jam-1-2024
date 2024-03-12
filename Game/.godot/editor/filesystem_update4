@@ -9,5 +9,3 @@ res://UI/pause_menu.tscn
 res://healthbar.tscn
 res://Magik/menu.tscn
 res://Magik/options_menu.tscn
-res://Scripts/Character.gd
-res://main.gd
