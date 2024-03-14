@@ -3,7 +3,7 @@ extends CharacterBody2D
 @export var SPEED : int = 100
 @export var JUMP_FORCE : int = 175
 @export var GRAVITY : int = 750
-const DASH_SPEED = 500.0
+const DASH_SPEED = 425
 var dashing = false
 var can_dash = true
 const SPRINT_SPEED = 200

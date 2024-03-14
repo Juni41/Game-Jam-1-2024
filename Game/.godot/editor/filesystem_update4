@@ -9,3 +9,4 @@ res://Magik/ability_1.tscn
 res://UI/pause_menu.tscn
 res://healthbar.tscn
 res://Magik/options_menu.tscn
+res://Scripts/Character.gd
