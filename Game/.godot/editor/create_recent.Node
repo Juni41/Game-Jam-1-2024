@@ -1,9 +1,10 @@
+Label
+TextEdit
 Button
 VBoxContainer
 MarginContainer
 TextureRect
 CenterContainer
-TextEdit
 CheckButton
 Marker2D
 Control

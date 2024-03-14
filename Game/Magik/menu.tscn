@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dlt4td1r7gdun"]
 
 [ext_resource type="Script" path="res://Menu.gd" id="1_uewvn"]
-[ext_resource type="Texture2D" uid="uid://dwpgm33h1mg31" path="res://UI/goodbutton.png" id="2_kafyi"]
+[ext_resource type="FontFile" uid="uid://4okwckfclbvd" path="res://Silver.ttf" id="2_pxl17"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -33,17 +33,30 @@ layout_mode = 2
 
 [node name="play" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-size_flags_horizontal = 4
-icon = ExtResource("2_kafyi")
-flat = true
+theme_override_fonts/font = ExtResource("2_pxl17")
+text = "Play"
+icon_alignment = 1
 
 [node name="Options" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_pxl17")
 text = "Options"
 
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_pxl17")
 text = "Quit"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = -48.0
+offset_top = -81.0
+offset_right = 39.0
+offset_bottom = -58.0
+theme_override_fonts/font = ExtResource("2_pxl17")
+text = "Gembound"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]
