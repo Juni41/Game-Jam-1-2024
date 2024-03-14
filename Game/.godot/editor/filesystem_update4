@@ -11,3 +11,5 @@ res://healthbar.tscn
 res://Magik/options_menu.tscn
 res://Scripts/Character.gd
 res://Area2D.gd
+res://environment.tscn
+res://main.gd
