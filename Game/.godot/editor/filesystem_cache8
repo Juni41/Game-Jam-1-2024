@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1710312877
+::res://::1710396160
 character_body_2d.tscn::PackedScene::2605930371042604969::1708589298::0::1::::<><>::uid://dy4hr4gmufwvb::::res://icon.svg
 export_presets.cfg::TextFile::-1::1708633505::0::1::::<><>::
 healthbar.gd::GDScript::-1::1708590435::0::1::::<>ProgressBar<>::
 healthbar.tscn::PackedScene::1301218142370941267::1710312877::0::1::::<><>::res://healthbar.gd
 icon.svg::CompressedTexture2D::8904118163723717515::1707291839::1707292439::1::::<><>::
 main.gd::GDScript::-1::1710229948::0::1::::<>Node2D<>::
-main.tscn::PackedScene::7878489227177933876::1710312876::0::1::::<><>::uid://baabn48f6q0qf::::res://Scenes/flower.tscn<>res://main.gd<>uid://crs1qne0rtnsf::::res://Scenes/Grass.tscn<>uid://dxy11jayr3sq4::::res://Scenes/widegrass.tscn<>uid://c8ws5idwflt67::::res://Scenes/main_char.tscn<>uid://cqnrwn042lh5::::res://Magik/ability_1.tscn<>uid://6gcqelym3m8g::::res://Sprites/Environment/tile.png<>uid://pmvfhg7jcfkg::::res://Sprites/Environment/Dirt.png<>uid://c41rgk8t4xdqv::::res://Sprites/Environment/CornerTile.png<>uid://bn4plh6r5g5mm::::res://Scenes/Inventory.tscn<>res://Surface.gd<>uid://1onfm3nkksmc::::res://Sprites/Environment/rocc.png<>uid://0wroaif1f0jr::::res://UI/pause_menu.tscn
+main.tscn::PackedScene::7878489227177933876::1710314272::0::1::::<><>::uid://baabn48f6q0qf::::res://Scenes/flower.tscn<>res://main.gd<>uid://crs1qne0rtnsf::::res://Scenes/Grass.tscn<>uid://dxy11jayr3sq4::::res://Scenes/widegrass.tscn<>uid://c8ws5idwflt67::::res://Scenes/main_char.tscn<>uid://cqnrwn042lh5::::res://Magik/ability_1.tscn<>uid://6gcqelym3m8g::::res://Sprites/Environment/tile.png<>uid://pmvfhg7jcfkg::::res://Sprites/Environment/Dirt.png<>uid://c41rgk8t4xdqv::::res://Sprites/Environment/CornerTile.png<>uid://bn4plh6r5g5mm::::res://Scenes/Inventory.tscn<>res://Surface.gd<>uid://1onfm3nkksmc::::res://Sprites/Environment/rocc.png<>uid://0wroaif1f0jr::::res://UI/pause_menu.tscn
 Menu.gd::GDScript::-1::1710047490::0::1::::<>Control<>::
 Popup.gd::GDScript::-1::1708245615::0::1::::<>Popup<>::
 popup.tscn::PackedScene::3289960977505956704::1710312877::0::1::::<><>::res://popup.gd<>uid://4okwckfclbvd::::res://Silver.ttf
