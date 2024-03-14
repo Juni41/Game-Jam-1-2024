@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dlt4td1r7gdun"]
+[gd_scene load_steps=3 format=3 uid="uid://dlt4td1r7gdun"]
 
 [ext_resource type="Script" path="res://Menu.gd" id="1_uewvn"]
+[ext_resource type="Texture2D" uid="uid://dwpgm33h1mg31" path="res://UI/goodbutton.png" id="2_kafyi"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -32,7 +33,9 @@ layout_mode = 2
 
 [node name="play" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-text = "Play"
+size_flags_horizontal = 4
+icon = ExtResource("2_kafyi")
+flat = true
 
 [node name="Options" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
