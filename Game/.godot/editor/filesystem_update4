@@ -7,3 +7,5 @@ res://Scenes/Inventory.tscn
 res://Magik/ability_1.tscn
 res://UI/pause_menu.tscn
 res://healthbar.tscn
+res://Magik/menu.tscn
+res://Magik/options_menu.tscn
