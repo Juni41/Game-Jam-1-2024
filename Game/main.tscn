@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dkinti5dvjm5q"]
+[gd_scene load_steps=12 format=3 uid="uid://dkinti5dvjm5q"]
 
 [ext_resource type="PackedScene" uid="uid://baabn48f6q0qf" path="res://Scenes/flower.tscn" id="1_cn5cr"]
 [ext_resource type="Script" path="res://main.gd" id="1_yox8y"]
@@ -8,22 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://c8ws5idwflt67" path="res://Scenes/main_char.tscn" id="4_q1odw"]
 [ext_resource type="PackedScene" uid="uid://cqnrwn042lh5" path="res://Magik/ability_1.tscn" id="5_ibafe"]
 [ext_resource type="PackedScene" uid="uid://bn4plh6r5g5mm" path="res://Scenes/Inventory.tscn" id="9_2prhb"]
-[ext_resource type="Script" path="res://Surface.gd" id="9_iyhg8"]
 [ext_resource type="Texture2D" uid="uid://1onfm3nkksmc" path="res://Sprites/Environment/rocc.png" id="10_2d5xg"]
 [ext_resource type="PackedScene" uid="uid://0wroaif1f0jr" path="res://UI/pause_menu.tscn" id="11_mf3pw"]
-
-[sub_resource type="GDScript" id="GDScript_o1ksx"]
-script/source = "extends Area2D
-
-var destination_teleporter: Node2D # Reference to the destination teleporter
-
-func _on_TeleporterA_body_entered(body):
-	if body.is_in_group(\"player\"): # Change \"player\" to your player's group
-		body.position = destination_teleporter.position
-"
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_52g3q"]
-size = Vector2(140, 228)
 
 [sub_resource type="GDScript" id="GDScript_gusme"]
 
@@ -32,22 +18,9 @@ process_mode = 3
 script = ExtResource("1_yox8y")
 
 [node name="Environment" parent="." instance=ExtResource("2_et8uv")]
-
-[node name="TPA" type="Area2D" parent="."]
-script = SubResource("GDScript_o1ksx")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TPA"]
-
-[node name="TPB" type="Area2D" parent="."]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TPB"]
-
-[node name="Surface" type="Area2D" parent="."]
-script = ExtResource("9_iyhg8")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Surface"]
-position = Vector2(685, 349)
-shape = SubResource("RectangleShape2D_52g3q")
+z_index = 1
+rendering_quadrant_size = 30
+collision_animatable = true
 
 [node name="Pausable" type="Node2D" parent="."]
 
