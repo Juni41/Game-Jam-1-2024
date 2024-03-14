@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dkinti5dvjm5q"]
+[gd_scene load_steps=23 format=3 uid="uid://dkinti5dvjm5q"]
 
 [ext_resource type="PackedScene" uid="uid://baabn48f6q0qf" path="res://Scenes/flower.tscn" id="1_cn5cr"]
 [ext_resource type="Script" path="res://main.gd" id="1_yox8y"]
@@ -13,6 +13,7 @@
 [ext_resource type="Script" path="res://Surface.gd" id="9_iyhg8"]
 [ext_resource type="Texture2D" uid="uid://1onfm3nkksmc" path="res://Sprites/Environment/rocc.png" id="10_2d5xg"]
 [ext_resource type="PackedScene" uid="uid://0wroaif1f0jr" path="res://UI/pause_menu.tscn" id="11_mf3pw"]
+[ext_resource type="Script" path="res://Area2D.gd" id="14_mjjt6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2k5fa"]
 texture = ExtResource("5_v6nsn")
@@ -85,6 +86,9 @@ size = Vector2(140, 228)
 
 [sub_resource type="GDScript" id="GDScript_gusme"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8e4xf"]
+size = Vector2(20, 24)
+
 [node name="Main" type="Node2D"]
 process_mode = 3
 script = ExtResource("1_yox8y")
@@ -109,7 +113,7 @@ script = SubResource("GDScript_o1ksx")
 script = ExtResource("9_iyhg8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Surface"]
-position = Vector2(252, 522)
+position = Vector2(685, 349)
 shape = SubResource("RectangleShape2D_52g3q")
 
 [node name="Pausable" type="Node2D" parent="."]
@@ -197,5 +201,21 @@ offset_top = 254.0
 offset_right = 334.0
 offset_bottom = 254.0
 
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(15, 1)
+script = ExtResource("14_mjjt6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(280, 527)
+shape = SubResource("RectangleShape2D_8e4xf")
+
+[node name="Label1" type="Label" parent="Area2D"]
+offset_left = 260.0
+offset_top = 493.0
+offset_right = 300.0
+offset_bottom = 516.0
+
 [connection signal="timeout" from="Pausable/Player/dash_timer" to="Pausable/Player" method="_on_dash_timer_timeout"]
 [connection signal="timeout" from="Pausable/Player/dash_again_timer" to="Pausable/Player" method="_on_dash_again_timer_timeout"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

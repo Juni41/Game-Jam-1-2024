@@ -1,4 +1,6 @@
 Label
+CollisionShape2D
+Area2D
 TextEdit
 Button
 VBoxContainer
@@ -10,6 +12,3 @@ Marker2D
 Control
 ParallaxBackground
 Timer
-AudioStreamPlayer2D
-ProgressBar
-CollisionShape2D
