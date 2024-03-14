@@ -1,4 +1,3 @@
-res://Magik/menu.tscn
 res://main.tscn
 res://Scenes/main_char.tscn
 res://Scenes/Grass.tscn
@@ -8,6 +7,7 @@ res://Scenes/Inventory.tscn
 res://Magik/ability_1.tscn
 res://UI/pause_menu.tscn
 res://healthbar.tscn
+res://Magik/menu.tscn
 res://Magik/options_menu.tscn
-res://Scripts/Character.gd
-res://Area2D.gd
+res://Enemy.tscn
+res://Enemy.gd

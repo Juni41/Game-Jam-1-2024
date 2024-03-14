@@ -1,6 +1,8 @@
-Label
 CollisionShape2D
 Area2D
+Sprite2D
+CharacterBody2D
+Label
 TextEdit
 Button
 VBoxContainer
@@ -10,5 +12,3 @@ CenterContainer
 CheckButton
 Marker2D
 Control
-ParallaxBackground
-Timer
