@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+TileMap
+Label
+>>>>>>> 8ecb0019e7a1b7017de791c37783b86419b39cab
 CollisionShape2D
 Area2D
 Sprite2D
@@ -12,3 +17,7 @@ CenterContainer
 CheckButton
 Marker2D
 Control
+<<<<<<< HEAD
+=======
+ParallaxBackground
+>>>>>>> 8ecb0019e7a1b7017de791c37783b86419b39cab

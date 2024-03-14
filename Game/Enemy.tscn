@@ -22,7 +22,6 @@ texture = ExtResource("1_nsd5m")
 [node name="DetectionArea" type="Area2D" parent="."]
 collision_layer = 2
 collision_mask = 2
-gravity_space_override = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]
 shape = SubResource("CircleShape2D_uhflv")
