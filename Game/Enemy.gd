@@ -24,6 +24,8 @@ func _on_detection_area_body_exited(body):
 
 func update_health():
 	var healthbar = $healthbar
+	
+	healthbar.value = health
 
 	if health >= 100:
 		healthbar.visible = false
