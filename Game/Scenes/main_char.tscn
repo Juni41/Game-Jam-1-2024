@@ -90,22 +90,18 @@ height = 26.0
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mw060"]
 
 [node name="MainChar" type="CharacterBody2D" groups=["player"]]
-position = Vector2(251, 645)
 collision_layer = 3
 script = ExtResource("1_y7s6a")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(110, 522)
 sprite_frames = SubResource("SpriteFrames_r7fp1")
 animation = &"Fall"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(110, 525)
 shape = SubResource("CapsuleShape2D_symls")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(114, 525)
 zoom = Vector2(4, 4)
 drag_horizontal_enabled = true
 drag_vertical_enabled = true

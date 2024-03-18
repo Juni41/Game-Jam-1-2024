@@ -11,3 +11,6 @@ res://Magik/menu.tscn
 res://Magik/options_menu.tscn
 res://Enemy.tscn
 res://Enemy.gd
+res://Menu.gd
+res://UI/menu.tscn
+res://Scripts/Character.gd
