@@ -8,7 +8,7 @@ var dashing = false
 var can_dash = true
 const SPRINT_SPEED = 200
 var sprinting = false
-
+var health = 100
 
 func _physics_process(delta):
 	var direction = Input.get_axis("Left", "Right")
@@ -38,6 +38,8 @@ func _physics_process(delta):
 	handle_jump()
 
 	move_and_slide()
+	
+	update_health()
 
 
 
@@ -78,3 +80,25 @@ func _on_dash_timer_timeout() -> void:
 
 func _on_dash_again_timer_timeout() -> void:
 	can_dash = true
+
+
+
+func update_health():
+	var healthbar = $healthbar
+
+	
+	healthbar.value = health
+	
+	if health >= 100:
+		healthbar.visible = false
+	else:
+		healthbar.visible = true
+
+
+func _on_regen_timer_timeout():
+	if health < 100:
+		health = health + 20
+		if health > 100:
+			health = 100
+	if health <= 0:
+		health = 0

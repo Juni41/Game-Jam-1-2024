@@ -157,6 +157,9 @@ texture = ExtResource("10_2d5xg")
 
 [node name="Player" parent="Pausable" instance=ExtResource("4_q1odw")]
 position = Vector2(68, 509)
+SPEED = 100
+JUMP_FORCE = 175
+GRAVITY = 750
 
 [node name="dash_timer" type="Timer" parent="Pausable/Player"]
 wait_time = 0.2
