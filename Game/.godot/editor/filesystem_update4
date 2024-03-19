@@ -13,3 +13,4 @@ res://Enemy.tscn
 res://UI/menu.tscn
 res://Scenes/falling_spikes.tscn
 res://environments.tscn
+res://Enemy.gd
