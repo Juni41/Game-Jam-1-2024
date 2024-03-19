@@ -12,6 +12,7 @@ var health = 100
 var enemy_inattack_range = false
 var enemy_attack_cooldown = true
 var player_alive = true
+var attack_ip = false
 
 func _physics_process(delta):
 	enemy_attack()

@@ -13,3 +13,4 @@ res://healthbar.tscn
 res://Magik/menu.tscn
 res://Magik/options_menu.tscn
 res://UI/menu.tscn
+res://global.gd
