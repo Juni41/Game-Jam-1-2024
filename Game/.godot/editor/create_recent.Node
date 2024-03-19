@@ -1,14 +1,14 @@
+Sprite2D
+Node
 Timer
 CollisionShape2D
 Area2D
 ProgressBar
 TileMap
 Label
-Sprite2D
 CharacterBody2D
 Label
 TextEdit
 Button
 VBoxContainer
 MarginContainer
-TextureRect
