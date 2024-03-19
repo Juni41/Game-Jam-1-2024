@@ -9,7 +9,6 @@ func _physics_process(delta):
 	if player_chase and player:
 		var direction = (player.global_position - self.global_position).normalized()
 		position += direction * speed * delta
-		print (direction)
 	update_health()
 func _on_detection_area_body_entered(body):
 	if body.is_in_group("player"):
@@ -31,3 +30,6 @@ func update_health():
 		healthbar.visible = false
 	else:
 		healthbar.visible = true
+
+func enemy():
+	pass

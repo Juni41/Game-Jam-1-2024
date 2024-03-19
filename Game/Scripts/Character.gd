@@ -9,8 +9,19 @@ var can_dash = true
 const SPRINT_SPEED = 200
 var sprinting = false
 var health = 100
+var enemy_inattack_range = false
+var enemy_attack_cooldown = true
+var player_alive = true
 
 func _physics_process(delta):
+	enemy_attack()
+	
+	if health <= 0:
+		player_alive = false #go back to menu or respond
+		health = 0
+		print("player has been killed")
+		self.queue_free()
+	
 	var direction = Input.get_axis("Left", "Right")
 
 	if Input.is_action_just_pressed("dash") and can_dash:
@@ -102,3 +113,27 @@ func _on_regen_timer_timeout():
 			health = 100
 	if health <= 0:
 		health = 0
+
+func player():
+	pass
+
+
+func _on_player_hitbox_body_entered(body):
+	if body.has_method("enemy"):
+		enemy_inattack_range = true
+
+
+func _on_player_hitbox_body_exited(body):
+	if body.has_method("enemy"):
+		enemy_inattack_range = true
+		
+func enemy_attack():
+	if enemy_inattack_range and enemy_attack_cooldown == true:
+		health = health - 20
+		enemy_attack_cooldown = false
+		$attack_cooldown.start()
+		print(health)
+
+
+func _on_attack_cooldown_timeout():
+	enemy_attack_cooldown = true

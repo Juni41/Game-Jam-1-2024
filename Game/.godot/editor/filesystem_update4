@@ -1,5 +1,8 @@
-res://main.tscn
 res://Scenes/main_char.tscn
+res://Scripts/Character.gd
+res://Enemy.tscn
+res://Enemy.gd
+res://main.tscn
 res://Scenes/Grass.tscn
 res://Scenes/flower.tscn
 res://popup.tscn
@@ -9,7 +12,4 @@ res://UI/pause_menu.tscn
 res://healthbar.tscn
 res://Magik/menu.tscn
 res://Magik/options_menu.tscn
-res://Enemy.tscn
 res://UI/menu.tscn
-res://Scripts/Character.gd
-res://Enemy.gd
