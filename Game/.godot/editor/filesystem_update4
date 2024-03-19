@@ -11,6 +11,4 @@ res://Magik/menu.tscn
 res://Magik/options_menu.tscn
 res://Enemy.tscn
 res://UI/menu.tscn
-res://Enemy.gd
-res://Scripts/Character.gd
 res://Scenes/falling_spikes.tscn

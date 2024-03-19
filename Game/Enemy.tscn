@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ae533"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v1p5s"]
-size = Vector2(54, 7)
+size = Vector2(42, 7)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_c65pj"]
 radius = 15.2971
@@ -27,7 +27,7 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]
-position = Vector2(0, 0.5)
+position = Vector2(6, 0.5)
 shape = SubResource("RectangleShape2D_v1p5s")
 
 [node name="healthbar" type="ProgressBar" parent="."]
