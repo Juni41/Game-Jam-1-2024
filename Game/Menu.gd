@@ -6,7 +6,7 @@ func _on_play_pressed():#hide menu and initiate game
 
 
 func _on_options_pressed():#switch scenes to option menu
-	get_tree().change_scene_to_file("res://Magik/options_menu.tscn")
+	get_tree().change_scene_to_file("res://Scenes/options_menu.tscn")
 
 
 func _on_quit_pressed():
