@@ -6,11 +6,11 @@
 [ext_resource type="PackedScene" uid="uid://crs1qne0rtnsf" path="res://Scenes/Grass.tscn" id="2_pyyoy"]
 [ext_resource type="PackedScene" uid="uid://dxy11jayr3sq4" path="res://Scenes/widegrass.tscn" id="3_fnhqv"]
 [ext_resource type="PackedScene" uid="uid://c8ws5idwflt67" path="res://Scenes/main_char.tscn" id="4_q1odw"]
-[ext_resource type="PackedScene" uid="uid://cqnrwn042lh5" path="res://Magik/ability_1.tscn" id="5_ibafe"]
+[ext_resource type="PackedScene" uid="uid://cqnrwn042lh5" path="res://Scenes/ability_1.tscn" id="5_ibafe"]
 [ext_resource type="PackedScene" uid="uid://bn4plh6r5g5mm" path="res://Scenes/Inventory.tscn" id="9_2prhb"]
 [ext_resource type="Texture2D" uid="uid://1onfm3nkksmc" path="res://Sprites/Environment/rocc.png" id="10_2d5xg"]
 [ext_resource type="PackedScene" uid="uid://0wroaif1f0jr" path="res://UI/pause_menu.tscn" id="11_mf3pw"]
-[ext_resource type="Script" path="res://Area2D.gd" id="14_mjjt6"]
+[ext_resource type="Script" path="res://Scripts/Area2D.gd" id="14_mjjt6"]
 [ext_resource type="PackedScene" uid="uid://b01ws8gttyj58" path="res://Scenes/falling_spikes.tscn" id="15_jc0mv"]
 [ext_resource type="PackedScene" uid="uid://bspl0xad4k1js" path="res://Enemy.tscn" id="15_v26yh"]
 

@@ -14,3 +14,6 @@ res://Scenes/falling_spikes.tscn
 res://environments.tscn
 res://Scripts/Character.gd
 res://Menu.gd
+res://Scenes/menu.tscn
+res://Scenes/ability_1.tscn
+res://Scenes/options_menu.tscn

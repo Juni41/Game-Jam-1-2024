@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cck6c3hbmbwdd"
-path="res://.godot/imported/mage_jump.png-ef6441b1178ce93e62be203fa2dcca7b.ctex"
+path="res://.godot/imported/mage_jump.png-e6e0d6a6818ac08face0c6e8a8f6c5a7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/mage_jump.png"
-dest_files=["res://.godot/imported/mage_jump.png-ef6441b1178ce93e62be203fa2dcca7b.ctex"]
+source_file="res://Sprites/mage_jump.png"
+dest_files=["res://.godot/imported/mage_jump.png-e6e0d6a6818ac08face0c6e8a8f6c5a7.ctex"]
 
 [params]
 
