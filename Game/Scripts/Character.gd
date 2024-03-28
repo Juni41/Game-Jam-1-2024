@@ -21,12 +21,12 @@ func _physics_process(delta):
 		player_alive = false #go back to menu or respond
 		health = 0
 		print("player has been killed")
-		self.queue_free()
+		self.queue_free()#ending game
 	
 	var direction = Input.get_axis("Left", "Right")
 
 	if Input.is_action_just_pressed("dash") and can_dash:
-		dashing = true
+		dashing = true #initiating dash
 		can_dash = false
 		$dash_timer.start()
 		$dash_again_timer.start()
@@ -62,16 +62,16 @@ func handle_movement(direction):
 		velocity.x = direction * DASH_SPEED
 	else:
 		velocity.x = SPEED * direction
-		if is_on_floor():
+		if is_on_floor():#animation player for run
 			$AnimatedSprite2D.play("run")
 
 func handle_idle():
 	velocity.x = 0
-	if is_on_floor():
+	if is_on_floor():#animation player for idle
 		$AnimatedSprite2D.play("idle")
 
 func handle_flip(direction):
-	if direction == 1:
+	if direction == 1:#flipping character sprite according to direction on x axis
 		$AnimatedSprite2D.flip_h = false
 	elif direction == -1:
 		$AnimatedSprite2D.flip_h = true
