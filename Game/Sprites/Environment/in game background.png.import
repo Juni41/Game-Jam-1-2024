@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwpgm33h1mg31"
-path="res://.godot/imported/goodbutton.png-0a03823e7b4c60992bdd053ab1d68a7c.ctex"
+uid="uid://bpcrxnpbg0qgo"
+path="res://.godot/imported/in game background.png-636707cf5e657edab8f72cf8925fa3ad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/goodbutton.png"
-dest_files=["res://.godot/imported/goodbutton.png-0a03823e7b4c60992bdd053ab1d68a7c.ctex"]
+source_file="res://Sprites/Environment/in game background.png"
+dest_files=["res://.godot/imported/in game background.png-636707cf5e657edab8f72cf8925fa3ad.ctex"]
 
 [params]
 

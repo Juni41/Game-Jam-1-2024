@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Menu.gd" id="1_twwk7"]
 [ext_resource type="FontFile" uid="uid://4okwckfclbvd" path="res://Silver.ttf" id="2_4nwln"]
-[ext_resource type="Texture2D" uid="uid://bpcrxnpbg0qgo" path="res://Magik/in game background.png" id="3_kayiu"]
+[ext_resource type="Texture2D" uid="uid://bpcrxnpbg0qgo" path="res://Sprites/Environment/in game background.png" id="3_kayiu"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
