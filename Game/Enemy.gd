@@ -8,7 +8,7 @@ var player_inattack_zone = false
 
 func _physics_process(delta):
 
-	deal_with_damage()
+
 	
 	if player_chase and player:
 		var direction = (player.global_position - self.global_position).normalized()
