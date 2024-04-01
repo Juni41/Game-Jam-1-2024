@@ -53,6 +53,11 @@ position = Vector2(135, 534)
 scale = Vector2(1.34375, 1.34375)
 autoplay = "wide grass"
 
+[node name="AnimatedSprite2D9" parent="Pausable/Objects" instance=ExtResource("3_fnhqv")]
+position = Vector2(270, 534)
+scale = Vector2(1.34375, 1.34375)
+autoplay = "wide grass"
+
 [node name="AnimatedSprite2D6" parent="Pausable/Objects" instance=ExtResource("3_fnhqv")]
 position = Vector2(5, 518)
 scale = Vector2(1.34375, 1.34375)
@@ -71,6 +76,24 @@ script = SubResource("GDScript_gusme")
 
 [node name="AnimatedSprite2D4" parent="Pausable/Objects" instance=ExtResource("2_pyyoy")]
 position = Vector2(20, 522)
+frame = 2
+frame_progress = 0.0
+script = SubResource("GDScript_gusme")
+
+[node name="AnimatedSprite2D10" parent="Pausable/Objects" instance=ExtResource("2_pyyoy")]
+position = Vector2(103, 538)
+frame = 2
+frame_progress = 0.0
+script = SubResource("GDScript_gusme")
+
+[node name="AnimatedSprite2D11" parent="Pausable/Objects" instance=ExtResource("2_pyyoy")]
+position = Vector2(163, 538)
+frame = 2
+frame_progress = 0.0
+script = SubResource("GDScript_gusme")
+
+[node name="AnimatedSprite2D12" parent="Pausable/Objects" instance=ExtResource("2_pyyoy")]
+position = Vector2(323, 538)
 frame = 2
 frame_progress = 0.0
 script = SubResource("GDScript_gusme")
