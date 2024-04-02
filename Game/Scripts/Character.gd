@@ -56,6 +56,7 @@ func _physics_process(delta):
 
 
 func handle_movement(direction):
+	var dir = current_dir
 	if sprinting:
 		velocity.x = direction * SPRINT_SPEED
 	elif dashing:
@@ -63,29 +64,35 @@ func handle_movement(direction):
 	else:
 		velocity.x = SPEED * direction
 		if is_on_floor():#animation player for run
-			$AnimatedSprite2D.play("run")
+			if attack_ip == false:
+				$AnimatedSprite2D.play("run")
 
 func handle_idle():
 	velocity.x = 0
 	if is_on_floor():#animation player for idle
-		$AnimatedSprite2D.play("idle")
+		if attack_ip == false:
+			$AnimatedSprite2D.play("idle")
 
 func handle_flip(direction):
 	if direction == 1:#flipping character sprite according to direction on x axis
-		$AnimatedSprite2D.flip_h = false
+		if attack_ip == false:
+			$AnimatedSprite2D.flip_h = false
 	elif direction == -1:
-		$AnimatedSprite2D.flip_h = true
+		if attack_ip == false:
+			$AnimatedSprite2D.flip_h = true
 
 func handle_gravity(delta):
 	if not is_on_floor():
 		velocity.y += GRAVITY * delta
 		if velocity.y > 0:
-			$AnimatedSprite2D.play("Fall")
+			if attack_ip == false:
+				$AnimatedSprite2D.play("Fall")
 
 func handle_jump():
 	if is_on_floor() and Input.is_action_just_pressed("jump"):
 		velocity.y -= JUMP_FORCE
-		$AnimatedSprite2D.play("jump")
+		if attack_ip == false:
+			$AnimatedSprite2D.play("jump")
 
 func _on_dash_timer_timeout() -> void:
 	dashing = false
@@ -138,3 +145,5 @@ func enemy_attack():
 
 func _on_attack_cooldown_timeout():
 	enemy_attack_cooldown = true
+	
+func attack()
