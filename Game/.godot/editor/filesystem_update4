@@ -12,4 +12,3 @@ res://Enemy.tscn
 res://Scenes/falling_spikes.tscn
 res://environments.tscn
 res://Scripts/Character.gd
-res://Scripts/Enemy.gd
