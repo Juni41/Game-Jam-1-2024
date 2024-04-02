@@ -1,7 +1,7 @@
+Timer
 TextureRect
 Sprite2D
 Node
-Timer
 CollisionShape2D
 Area2D
 ProgressBar
@@ -12,4 +12,3 @@ Label
 TextEdit
 Button
 VBoxContainer
-MarginContainer

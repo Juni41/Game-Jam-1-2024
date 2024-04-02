@@ -34,7 +34,7 @@ shape = SubResource("RectangleShape2D_v1p5s")
 modulate = Color(0.819608, 0, 0.0431373, 1)
 offset_left = -10.0
 offset_top = 11.0
-offset_right = 190.0
+offset_right = 150.0
 offset_bottom = 38.0
 scale = Vector2(0.1, 0.1)
 value = 100.0
@@ -45,7 +45,11 @@ show_percentage = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="enemy_hitbox"]
 shape = SubResource("CircleShape2D_c65pj")
 
+[node name="take_damage_cooldown" type="Timer" parent="."]
+wait_time = 0.5
+
 [connection signal="body_entered" from="DetectionArea" to="." method="_on_detection_area_body_entered"]
 [connection signal="body_exited" from="DetectionArea" to="." method="_on_detection_area_body_exited"]
 [connection signal="body_entered" from="enemy_hitbox" to="." method="_on_enemy_hitbox_body_entered"]
 [connection signal="body_exited" from="enemy_hitbox" to="." method="_on_enemy_hitbox_body_exited"]
+[connection signal="timeout" from="take_damage_cooldown" to="." method="_on_take_damage_cooldown_timeout"]

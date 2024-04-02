@@ -8,14 +8,16 @@ var dashing = false
 var can_dash = true
 const SPRINT_SPEED = 200
 var sprinting = false
-var health = 100
+var health = 200
 var enemy_inattack_range = false
 var enemy_attack_cooldown = true
 var player_alive = true
 var attack_ip = false
+var current_dir = "none"
 
 func _physics_process(delta):
 	enemy_attack()
+	attack()
 	
 	if health <= 0:
 		player_alive = false #go back to menu or respond
@@ -24,6 +26,7 @@ func _physics_process(delta):
 		self.queue_free()#ending game
 	
 	var direction = Input.get_axis("Left", "Right")
+	
 
 	if Input.is_action_just_pressed("dash") and can_dash:
 		dashing = true #initiating dash
@@ -56,7 +59,7 @@ func _physics_process(delta):
 
 
 func handle_movement(direction):
-	var dir = current_dir
+	current_dir = direction
 	if sprinting:
 		velocity.x = direction * SPRINT_SPEED
 	elif dashing:
@@ -146,4 +149,27 @@ func enemy_attack():
 func _on_attack_cooldown_timeout():
 	enemy_attack_cooldown = true
 	
-func attack()
+func attack():
+	var dir = current_dir
+	
+#	if input.is_action_just_pressed("attack"):
+#		global.player_current_attack = true
+#		attack_ip = true
+#		if dir == "right":
+#			$AnimatedSprite2D.flip_h = false
+#			$AnimatedSprite2D.play("side_attack")
+#			$deal_attack_timer.start()
+#		if dir == "left":
+#			$AnimatedSprite2D.flip_h = true
+#			$AnimatedSprite2D.play("side_attack")
+#			$deal_attack_timer.start()
+#		if dir == "jump":
+#			$AnimatedSprite2D.play("jump_attack")
+#			$deal_attack_timer.start()
+			
+
+
+#func _on_deal_attack_timer_timeout():
+#	$deal_attack_timer.stop()
+#	global.player_current_attack = false
+#	attack_ip = false
