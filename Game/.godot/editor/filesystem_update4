@@ -1,2 +1,15 @@
 res://main.tscn
+res://Scenes/main_char.tscn
+res://Scenes/Grass.tscn
+res://Scenes/flower.tscn
+res://Scenes/Inventory.tscn
+res://Scenes/ability_1.tscn
+res://UI/pause_menu.tscn
+res://healthbar.tscn
+res://Scenes/menu.tscn
+res://Scenes/options_menu.tscn
+res://Enemy.tscn
+res://Scenes/falling_spikes.tscn
 res://environments.tscn
+res://Scripts/Character.gd
+res://Scripts/Enemy.gd
