@@ -152,6 +152,7 @@ func _on_attack_cooldown_timeout():
 func attack():
 	var dir = current_dir
 	
+	#This is all new code and currently does not function properly so is temporarily disabled by using #
 #	if input.is_action_just_pressed("attack"):
 #		global.player_current_attack = true
 #		attack_ip = true
