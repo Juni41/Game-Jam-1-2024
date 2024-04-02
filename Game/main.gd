@@ -4,7 +4,7 @@ extends Node2D
 var paused = false
 
 # Called when the node enters the scene tree for the first time.
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_just_pressed("pause"):
 		pauseMenu()
 
