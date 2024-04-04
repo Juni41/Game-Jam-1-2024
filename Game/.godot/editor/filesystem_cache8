@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1712221609
+::res://::1712221920
 character_body_2d.tscn::PackedScene::2605930371042604969::1708589298::0::1::::<><>::uid://dy4hr4gmufwvb::::res://icon.svg
 Enemy.tscn::PackedScene::3681499275469170860::1712091768::0::1::::<><>::uid://dy4hr4gmufwvb::::res://icon.svg<>res://Scripts/Enemy.gd
 environment.tscn::PackedScene::4310446129266653865::1710407564::0::1::::<><>::uid://6gcqelym3m8g::::res://Sprites/Environment/tile.png<>uid://pmvfhg7jcfkg::::res://Sprites/Environment/Dirt.png<>uid://c41rgk8t4xdqv::::res://Sprites/Environment/CornerTile.png
@@ -14,11 +14,10 @@ Menu.gd::GDScript::-1::1711865552::0::1::::<>Control<>::
 Popup.gd::GDScript::-1::1708245615::0::1::::<>Popup<>::
 popup.tscn::PackedScene::3289960977505956704::1711586999::0::1::::<><>::res://popup.gd<>uid://4okwckfclbvd::::res://Silver.ttf
 Silver.ttf::FontFile::2065024332178376809::1709594238::1708245788::1::::<><>::
-tile_map.tscn::PackedScene::2578739726440556211::1710407477::0::1::::<><>::
 ::res://Magik/::1711865552
 Back.gd::GDScript::-1::1710047490::0::1::::<>Button<>::
 options_menu.gd::GDScript::-1::1710047490::0::1::::<>Control<>::
-::res://Scenes/::1712091768
+::res://Scenes/::1712221913
 ability_1.tscn::PackedScene::174228587515242560::1711949428::0::1::::<><>::
 damaging.tscn::PackedScene::4749192927140040174::1708500129::0::1::::<><>::res://Scripts/damaging.gd<>uid://sc5psl5mvup1::::res://Sprites/Environment/Spikes1.png
 falling_spikes.tscn::PackedScene::4196185257809614609::1711949429::0::1::::<><>::
@@ -29,8 +28,9 @@ main_char.tscn::PackedScene::7135636423545459890::1712091768::0::1::::<><>::res:
 menu.tscn::PackedScene::7972357429849585809::1711949429::0::1::::<><>::res://Menu.gd<>uid://4okwckfclbvd::::res://Silver.ttf<>uid://bpcrxnpbg0qgo::::res://Sprites/Environment/in game background.png
 node_2d.tscn::PackedScene::3356597265597077870::1707953353::0::1::::<><>::
 options_menu.tscn::PackedScene::554668167039368664::1711949429::0::1::::<><>::res://Magik/options_menu.gd
+tile_map.tscn::PackedScene::2578739726440556211::1710407477::0::1::::<><>::
 widegrass.tscn::PackedScene::8824776067129379061::1707953353::0::1::::<><>::uid://dtwjq61f54331::::res://Sprites/Environment/wide grass.png
-::res://Scripts/::1712091768
+::res://Scripts/::1712221920
 Area2D.gd::GDScript::-1::1711865552::0::1::::<>Area2D<>::
 Character.gd::GDScript::-1::1712091768::0::1::::<>CharacterBody2D<>::
 damaging.gd::GDScript::-1::1708500126::0::1::::<>Node2D<>::
@@ -44,9 +44,10 @@ idle.png::CompressedTexture2D::4131167086730627226::1708243867::1708243867::1:::
 mage_jump.png::CompressedTexture2D::5203255589411136356::1708306721::1708306721::1::::<><>::
 mage_jumpnew.png::CompressedTexture2D::6602814495072699555::1708385649::1708385650::1::::<><>::
 walkcyclefinal.png::CompressedTexture2D::4839411828558401544::1708235206::1708235236::1::::<><>::
-::res://Sprites/Environment/::1711950284
+::res://Sprites/Environment/::1712221920
 button.png::CompressedTexture2D::6480194552020978872::1708412168::1708412168::1::::<><>::
 CornerTile.png::CompressedTexture2D::6863035135250136681::1708074677::1708074677::1::::<><>::
+cornertile_2.png::CompressedTexture2D::7127739273572997024::1712221892::1712221920::1::::<><>::
 CornerTile_full.png::CompressedTexture2D::6552100016205168012::1711950277::1711950284::1::::<><>::
 Dirt.png::CompressedTexture2D::1078889551835146126::1708074677::1708074677::1::::<><>::
 flower.png::CompressedTexture2D::6140666165230085849::1707953353::1707953353::1::::<><>::
