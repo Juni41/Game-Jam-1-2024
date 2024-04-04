@@ -3,10 +3,10 @@ extends CharacterBody2D
 @export var SPEED : int = 100
 @export var JUMP_FORCE : int = 175
 @export var GRAVITY : int = 750
-const DASH_SPEED = 500
+const DASH_SPEED = 350
 var dashing = false
 var can_dash = true
-const SPRINT_SPEED = 200
+const SPRINT_SPEED = 185
 var sprinting = false
 var health = 100
 var enemy_inattack_range = false
@@ -25,13 +25,13 @@ func _physics_process(delta):
 		print("player has been killed")
 		self.queue_free()#ending game
 	
-	var direction = Input.get_axis("Left", "Right")
+	var direction = Input.get_axis("Left", "Right")#getting input for w and d
 	
 
 	if Input.is_action_just_pressed("dash") and can_dash:
 		dashing = true #initiating dash
 		can_dash = false
-		$dash_timer.start()
+		$dash_timer.start() #cooldown start
 		$dash_again_timer.start()
 
 	if Input.is_action_pressed("sprint"):
@@ -46,7 +46,7 @@ func _physics_process(delta):
 	else:
 		handle_idle()
 
-	handle_flip(direction)
+	handle_flip(direction)#flipping sprite
 
 	handle_gravity(delta)
 
@@ -59,7 +59,7 @@ func _physics_process(delta):
 
 
 func handle_movement(direction):
-	current_dir = direction
+	current_dir = direction#finding player facing
 	if sprinting:
 		velocity.x = direction * SPRINT_SPEED
 	elif dashing:

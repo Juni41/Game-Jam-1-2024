@@ -11,3 +11,4 @@ res://Scenes/menu.tscn
 res://Scenes/options_menu.tscn
 res://Enemy.tscn
 res://Scenes/falling_spikes.tscn
+res://Scripts/Character.gd
