@@ -95,6 +95,9 @@ radius = 20.3961
 [node name="MainChar" type="CharacterBody2D" groups=["player"]]
 collision_layer = 3
 script = ExtResource("1_y7s6a")
+SPEED = null
+JUMP_FORCE = null
+GRAVITY = null
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_r7fp1")
