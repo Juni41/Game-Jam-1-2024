@@ -1,7 +1,11 @@
+Label
+TextureRect
+Button
+VBoxContainer
+MarginContainer
 ParallaxBackground
 Sprite2D
 ParallaxLayer
-TextureRect
 AnimatedSprite2D
 Timer
 Node
@@ -9,6 +13,3 @@ CollisionShape2D
 Area2D
 ProgressBar
 TileMap
-Label
-CharacterBody2D
-Label
