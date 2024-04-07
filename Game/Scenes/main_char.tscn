@@ -95,9 +95,6 @@ radius = 20.3961
 [node name="MainChar" type="CharacterBody2D" groups=["player"]]
 collision_layer = 3
 script = ExtResource("1_y7s6a")
-SPEED = null
-JUMP_FORCE = null
-GRAVITY = null
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_r7fp1")
@@ -123,9 +120,9 @@ shape = SubResource("CapsuleShape2D_mw060")
 [node name="healthbar" type="ProgressBar" parent="."]
 modulate = Color(0, 1, 0, 1)
 offset_left = -14.0
-offset_top = -22.0
+offset_top = -20.0
 offset_right = 266.0
-offset_bottom = 35.0
+offset_bottom = 17.0
 scale = Vector2(0.1, 0.1)
 show_percentage = false
 
