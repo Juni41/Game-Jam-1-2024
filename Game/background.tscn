@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfijw41xkd6k8"]
+
+[ext_resource type="Texture2D" uid="uid://bcrpyxe7y05ww" path="res://Sprites/Environment/background layers/in game background_layer1.png" id="1_gpkt7"]
+[ext_resource type="Texture2D" uid="uid://cc3ne4fitbhno" path="res://Sprites/Environment/background layers/in game background_layer2.png" id="2_rb7xv"]
+[ext_resource type="Texture2D" uid="uid://rxh14ina20i2" path="res://Sprites/Environment/background layers/in game background_layer3.png" id="3_a0nmk"]
+
+[node name="Background" type="ParallaxBackground"]
+
+[node name="layer1" type="ParallaxLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="layer1"]
+position = Vector2(259, 251)
+texture = ExtResource("1_gpkt7")
+
+[node name="layer2" type="ParallaxLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="layer2"]
+position = Vector2(259, 251)
+texture = ExtResource("2_rb7xv")
+
+[node name="layer3" type="ParallaxLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="layer3"]
+position = Vector2(259, 249)
+texture = ExtResource("3_a0nmk")

@@ -1,6 +1,6 @@
+ParallaxBackground
 Sprite2D
 ParallaxLayer
-ParallaxBackground
 TextureRect
 AnimatedSprite2D
 Timer
