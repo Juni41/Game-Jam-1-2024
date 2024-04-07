@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://pmvfhg7jcfkg" path="res://Sprites/Environment/Dirt.png" id="2_ngy3s"]
 [ext_resource type="Texture2D" uid="uid://c41rgk8t4xdqv" path="res://Sprites/Environment/CornerTile.png" id="3_xcbxo"]
 [ext_resource type="Texture2D" uid="uid://c0l5eojip56dk" path="res://Sprites/Environment/CornerTile_full.png" id="4_1fby7"]
-[ext_resource type="Texture2D" uid="uid://c8sy3bctt7713" path="res://Sprites/Environment/cornertile_2.png" id="5_4jtph"]
+[ext_resource type="Texture2D" uid="uid://bs8r6sq5keoh5" path="res://Sprites/Environment/background layers/cornertile_2-export.png" id="5_ut4kq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2k5fa"]
 texture = ExtResource("1_c3j00")
@@ -46,7 +46,7 @@ texture_region_size = Vector2i(18, 26)
 1:1/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_82x0f"]
-texture = ExtResource("5_4jtph")
+texture = ExtResource("5_ut4kq")
 texture_region_size = Vector2i(18, 26)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
