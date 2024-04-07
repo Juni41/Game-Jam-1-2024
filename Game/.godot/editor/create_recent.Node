@@ -1,6 +1,9 @@
-Timer
-TextureRect
+ParallaxBackground
 Sprite2D
+ParallaxLayer
+TextureRect
+AnimatedSprite2D
+Timer
 Node
 CollisionShape2D
 Area2D
@@ -9,6 +12,3 @@ TileMap
 Label
 CharacterBody2D
 Label
-TextEdit
-Button
-VBoxContainer

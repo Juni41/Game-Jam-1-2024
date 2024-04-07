@@ -3,12 +3,12 @@ extends CharacterBody2D
 @export var SPEED : int = 100
 @export var JUMP_FORCE : int = 175
 @export var GRAVITY : int = 750
-const DASH_SPEED = 500
+const DASH_SPEED = 350
 var dashing = false
 var can_dash = true
-const SPRINT_SPEED = 200
+const SPRINT_SPEED = 185
 var sprinting = false
-var health = 200
+var health = 100
 var enemy_inattack_range = false
 var enemy_attack_cooldown = true
 var player_alive = true
@@ -25,13 +25,13 @@ func _physics_process(delta):
 		print("player has been killed")
 		self.queue_free()#ending game
 	
-	var direction = Input.get_axis("Left", "Right")
+	var direction = Input.get_axis("Left", "Right")#getting input for w and d
 	
 
 	if Input.is_action_just_pressed("dash") and can_dash:
 		dashing = true #initiating dash
 		can_dash = false
-		$dash_timer.start()
+		$dash_timer.start() #cooldown start
 		$dash_again_timer.start()
 
 	if Input.is_action_pressed("sprint"):
@@ -46,7 +46,7 @@ func _physics_process(delta):
 	else:
 		handle_idle()
 
-	handle_flip(direction)
+	handle_flip(direction)#flipping sprite
 
 	handle_gravity(delta)
 
@@ -59,7 +59,7 @@ func _physics_process(delta):
 
 
 func handle_movement(direction):
-	current_dir = direction
+	current_dir = direction#finding player facing
 	if sprinting:
 		velocity.x = direction * SPRINT_SPEED
 	elif dashing:
@@ -152,25 +152,16 @@ func _on_attack_cooldown_timeout():
 func attack():
 	var dir = current_dir
 	
-	#This is all new code and currently does not function properly so is temporarily disabled by using #
-#	if input.is_action_just_pressed("attack"):
-#		global.player_current_attack = true
-#		attack_ip = true
-#		if dir == "right":
-#			$AnimatedSprite2D.flip_h = false
-#			$AnimatedSprite2D.play("side_attack")
-#			$deal_attack_timer.start()
-#		if dir == "left":
-#			$AnimatedSprite2D.flip_h = true
-#			$AnimatedSprite2D.play("side_attack")
-#			$deal_attack_timer.start()
-#		if dir == "jump":
-#			$AnimatedSprite2D.play("jump_attack")
-#			$deal_attack_timer.start()
+	if Input.is_action_just_pressed("attack"):
+		global.player_current_attack = true
+		attack_ip = true
 			
 
 
-#func _on_deal_attack_timer_timeout():
-#	$deal_attack_timer.stop()
-#	global.player_current_attack = false
-#	attack_ip = false
+func _on_deal_attack_timer_timeout():
+	$deal_attack_timer.stop()
+	global.player_current_attack = false
+	attack_ip = false
+
+
+
