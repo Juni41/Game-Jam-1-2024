@@ -10,3 +10,4 @@ res://Scenes/falling_spikes.tscn
 res://environments.tscn
 res://background.tscn
 res://Scripts/Character.gd
+res://death_screen.tscn
