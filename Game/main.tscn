@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://dkinti5dvjm5q"]
+[gd_scene load_steps=24 format=3 uid="uid://dkinti5dvjm5q"]
 
 [ext_resource type="PackedScene" uid="uid://baabn48f6q0qf" path="res://Scenes/flower.tscn" id="1_cn5cr"]
 [ext_resource type="Script" path="res://main.gd" id="1_yox8y"]
@@ -12,11 +12,9 @@
 [ext_resource type="Texture2D" uid="uid://1onfm3nkksmc" path="res://Sprites/Environment/rocc.png" id="10_2d5xg"]
 [ext_resource type="PackedScene" uid="uid://0wroaif1f0jr" path="res://UI/pause_menu.tscn" id="11_mf3pw"]
 [ext_resource type="Script" path="res://Scripts/Area2D.gd" id="14_mjjt6"]
+[ext_resource type="PackedScene" uid="uid://dfijw41xkd6k8" path="res://background.tscn" id="15_8os5n"]
 [ext_resource type="PackedScene" uid="uid://b01ws8gttyj58" path="res://Scenes/falling_spikes.tscn" id="15_jc0mv"]
 [ext_resource type="PackedScene" uid="uid://bspl0xad4k1js" path="res://Enemy.tscn" id="15_v26yh"]
-[ext_resource type="Texture2D" uid="uid://bcrpyxe7y05ww" path="res://Sprites/Environment/background layers/in game background_layer1.png" id="15_yq0hl"]
-[ext_resource type="Texture2D" uid="uid://cc3ne4fitbhno" path="res://Sprites/Environment/background layers/in game background_layer2.png" id="16_l4qxl"]
-[ext_resource type="Texture2D" uid="uid://rxh14ina20i2" path="res://Sprites/Environment/background layers/in game background_layer3.png" id="17_s7jm5"]
 
 [sub_resource type="GDScript" id="GDScript_gusme"]
 
@@ -218,7 +216,7 @@ offset_right = 300.0
 offset_bottom = 516.0
 
 [node name="Enemy" parent="." instance=ExtResource("15_v26yh")]
-position = Vector2(224, 529)
+position = Vector2(507, 522)
 speed = 50
 
 [node name="Falling Spikes" parent="." instance=ExtResource("15_jc0mv")]
@@ -226,25 +224,9 @@ speed = 50
 [node name="AnimatedSprite2D" parent="." instance=ExtResource("1_cn5cr")]
 position = Vector2(235, 536)
 
-[node name="Background" type="ParallaxBackground" parent="."]
+[node name="Background" parent="." instance=ExtResource("15_8os5n")]
 
-[node name="layer1" type="ParallaxLayer" parent="Background"]
-
-[node name="Sprite2D" type="Sprite2D" parent="Background/layer1"]
-position = Vector2(95, 486)
-texture = ExtResource("15_yq0hl")
-
-[node name="layer2" type="ParallaxLayer" parent="Background"]
-
-[node name="Sprite2D" type="Sprite2D" parent="Background/layer2"]
-position = Vector2(95, 486)
-texture = ExtResource("16_l4qxl")
-
-[node name="layer3" type="ParallaxLayer" parent="Background"]
-
-[node name="Sprite2D" type="Sprite2D" parent="Background/layer3"]
-position = Vector2(95, 484)
-texture = ExtResource("17_s7jm5")
+[node name="Foreground" type="ParallaxBackground" parent="."]
 
 [connection signal="timeout" from="Pausable/Player/dash_timer" to="Pausable/Player" method="_on_dash_timer_timeout"]
 [connection signal="timeout" from="Pausable/Player/dash_again_timer" to="Pausable/Player" method="_on_dash_again_timer_timeout"]
