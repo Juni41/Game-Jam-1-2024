@@ -223,6 +223,12 @@ speed = 50
 [node name="AnimatedSprite2D" parent="." instance=ExtResource("1_cn5cr")]
 position = Vector2(235, 536)
 
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+
 [connection signal="timeout" from="Pausable/Player/dash_timer" to="Pausable/Player" method="_on_dash_timer_timeout"]
 [connection signal="timeout" from="Pausable/Player/dash_again_timer" to="Pausable/Player" method="_on_dash_again_timer_timeout"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
