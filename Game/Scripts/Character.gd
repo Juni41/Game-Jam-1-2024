@@ -19,11 +19,15 @@ func _physics_process(delta):
 	enemy_attack()
 	attack()
 	
+	
+	
 	if health <= 0:
 		player_alive = false #go back to menu or respond
 		health = 0
 		print("player has been killed")
-		self.queue_free()#ending game
+		on_player_death()
+		
+		
 	
 	var direction = Input.get_axis("Left", "Right")#getting input for w and d
 	
@@ -124,6 +128,7 @@ func _on_regen_timer_timeout():
 			health = 100
 	if health <= 0:
 		health = 0
+		
 
 func player():
 	pass
@@ -165,3 +170,5 @@ func _on_deal_attack_timer_timeout():
 
 
 
+func on_player_death():
+		get_tree().change_scene_to_file("res://Scenes/options_menu.tscn")

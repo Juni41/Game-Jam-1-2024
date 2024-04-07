@@ -216,7 +216,7 @@ offset_right = 300.0
 offset_bottom = 516.0
 
 [node name="Enemy" parent="." instance=ExtResource("15_v26yh")]
-position = Vector2(492, 533)
+position = Vector2(535, 536)
 speed = 50
 
 [node name="Falling Spikes" parent="." instance=ExtResource("15_jc0mv")]
