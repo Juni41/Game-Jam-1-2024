@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://dkinti5dvjm5q"]
+[gd_scene load_steps=24 format=3 uid="uid://dkinti5dvjm5q"]
 
 [ext_resource type="PackedScene" uid="uid://baabn48f6q0qf" path="res://Scenes/flower.tscn" id="1_cn5cr"]
 [ext_resource type="Script" path="res://main.gd" id="1_yox8y"]
@@ -15,7 +15,6 @@
 [ext_resource type="PackedScene" uid="uid://dfijw41xkd6k8" path="res://background.tscn" id="15_8os5n"]
 [ext_resource type="PackedScene" uid="uid://b01ws8gttyj58" path="res://Scenes/falling_spikes.tscn" id="15_jc0mv"]
 [ext_resource type="PackedScene" uid="uid://bspl0xad4k1js" path="res://Enemy.tscn" id="15_v26yh"]
-[ext_resource type="PackedScene" uid="uid://ytwnt080oljj" path="res://death_screen.tscn" id="16_8a4de"]
 
 [sub_resource type="GDScript" id="GDScript_gusme"]
 
@@ -228,8 +227,6 @@ position = Vector2(235, 536)
 [node name="Background" parent="." instance=ExtResource("15_8os5n")]
 
 [node name="Foreground" type="ParallaxBackground" parent="."]
-
-[node name="death_screen" parent="." instance=ExtResource("16_8a4de")]
 
 [connection signal="timeout" from="Pausable/Player/dash_timer" to="Pausable/Player" method="_on_dash_timer_timeout"]
 [connection signal="timeout" from="Pausable/Player/dash_again_timer" to="Pausable/Player" method="_on_dash_again_timer_timeout"]
