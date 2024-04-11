@@ -171,4 +171,4 @@ func _on_deal_attack_timer_timeout():
 
 
 func on_player_death():
-		get_tree().change_scene_to_file("res://Scenes/options_menu.tscn")
+		get_tree().change_scene_to_file("res://Scenes/death_screen.tscn")

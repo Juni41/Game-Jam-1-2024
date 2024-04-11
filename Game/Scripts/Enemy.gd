@@ -3,7 +3,7 @@ extends CharacterBody2D
 @export var speed = 200
 var player_chase = false
 var player = null
-var health = 100
+var health = 50
 var player_inattack_zone = false
 var can_take_damage = true
 
@@ -55,7 +55,7 @@ func deal_with_damage():
 			health = health - 20
 			$take_damage_cooldown.start()
 			can_take_damage = false
-			print("slime health = ", health)
+			print("crab health = ", health)
 			if health <= 0:
 				self.queue_free()
 

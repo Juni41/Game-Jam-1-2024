@@ -1,3 +1,4 @@
+AnimatedSprite2D
 Label
 TextureRect
 Button
@@ -6,10 +7,8 @@ MarginContainer
 ParallaxBackground
 Sprite2D
 ParallaxLayer
-AnimatedSprite2D
 Timer
 Node
 CollisionShape2D
 Area2D
 ProgressBar
-TileMap
