@@ -9,5 +9,5 @@ motion_scale = Vector2(0.5, 0.5)
 motion_mirroring = Vector2(320, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="layer1"]
-position = Vector2(157, 411)
+position = Vector2(160, 303)
 texture = ExtResource("1_pwmlh")
