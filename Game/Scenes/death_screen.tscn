@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://ytwnt080oljj"]
+[gd_scene load_steps=2 format=3 uid="uid://ytwnt080oljj"]
+
+[ext_resource type="Script" path="res://Scenes/death_screen.gd" id="1_v78d5"]
 
 [node name="death_screen" type="Control"]
 layout_mode = 3
@@ -7,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_v78d5")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
@@ -21,12 +24,20 @@ offset_bottom = 40.0
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="main_menu" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Main Menu"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 121.0
+offset_top = 60.0
+offset_right = 208.0
+offset_bottom = 83.0
+theme_override_font_sizes/font_size = 31
 text = "Game Over
 "
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/main_menu" to="." method="_on_main_menu_pressed"]
