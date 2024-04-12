@@ -36,6 +36,7 @@ offset_left = 121.0
 offset_top = 60.0
 offset_right = 208.0
 offset_bottom = 83.0
+scale = Vector2(0.992272, 0.986583)
 theme_override_font_sizes/font_size = 31
 text = "You Win!"
 
