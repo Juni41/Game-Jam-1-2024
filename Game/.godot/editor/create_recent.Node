@@ -1,9 +1,9 @@
-AnimatedSprite2D
 Label
-TextureRect
 Button
 VBoxContainer
 MarginContainer
+AnimatedSprite2D
+TextureRect
 ParallaxBackground
 Sprite2D
 ParallaxLayer

@@ -14,3 +14,6 @@ res://Scripts/Character.gd
 res://Scenes/death_screen.tscn
 res://Scripts/Enemy.gd
 res://Scenes/death_screen.gd
+res://Scenes/Control.gd
+res://Scenes/control.tscn
+res://Scenes/win_screen.tscn
