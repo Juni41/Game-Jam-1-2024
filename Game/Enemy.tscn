@@ -10,7 +10,7 @@ size = Vector2(28, 23)
 size = Vector2(41, 7)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hwfqa"]
-size = Vector2(28, 23)
+size = Vector2(65.75, 58.4375)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n70ve"]
 atlas = ExtResource("2_1yy0y")
@@ -38,7 +38,6 @@ animations = [{
 script = ExtResource("1_wblwj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-81, -2.5)
 shape = SubResource("RectangleShape2D_ae533")
 
 [node name="DetectionArea" type="Area2D" parent="."]
@@ -46,15 +45,15 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]
-position = Vector2(-81.5, 1)
+position = Vector2(0, 8)
 shape = SubResource("RectangleShape2D_v1p5s")
 
 [node name="healthbar" type="ProgressBar" parent="."]
 modulate = Color(0, 1, 0, 1)
-offset_left = -93.0
-offset_top = -20.0
-offset_right = 147.0
-offset_bottom = 12.0
+offset_left = -14.0
+offset_top = -15.0
+offset_right = 266.0
+offset_bottom = 17.0
 scale = Vector2(0.1, 0.1)
 value = 100.0
 show_percentage = false
@@ -62,14 +61,12 @@ show_percentage = false
 [node name="enemy_hitbox" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="enemy_hitbox"]
-position = Vector2(-81, -2.5)
 shape = SubResource("RectangleShape2D_hwfqa")
 
 [node name="take_damage_cooldown" type="Timer" parent="."]
 wait_time = 0.5
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-77, -3)
 scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_swj2u")
 

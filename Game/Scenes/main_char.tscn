@@ -90,7 +90,7 @@ height = 28.0
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mw060"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6ovy2"]
-radius = 20.3961
+radius = 17.2627
 
 [node name="MainChar" type="CharacterBody2D" groups=["player"]]
 collision_layer = 3
