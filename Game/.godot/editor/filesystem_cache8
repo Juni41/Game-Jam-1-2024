@@ -1,81 +1,81 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1712882146
-background.tscn::PackedScene::7527308596103350409::1712882146::0::1::::<><>::uid://bpcrxnpbg0qgo::::res://Sprites/Environment/in game background.png
-character_body_2d.tscn::PackedScene::2605930371042604969::1712879952::0::1::::<><>::uid://dy4hr4gmufwvb::::res://icon.svg
-Enemy.tscn::PackedScene::3681499275469170860::1712882146::0::1::::<><>::res://Scripts/Enemy.gd<>uid://dwe1nyau4fa6c::::res://Sprites/Characters/crab 6 (1).png
-environment.tscn::PackedScene::4310446129266653865::1712879952::0::1::::<><>::uid://6gcqelym3m8g::::res://Sprites/Environment/tile.png<>uid://pmvfhg7jcfkg::::res://Sprites/Environment/Dirt.png<>uid://c41rgk8t4xdqv::::res://Sprites/Environment/CornerTile.png
-environments.tscn::PackedScene::870781548317631537::1712882146::0::1::::<><>::uid://6gcqelym3m8g::::res://Sprites/Environment/tile.png<>uid://pmvfhg7jcfkg::::res://Sprites/Environment/Dirt.png<>uid://c41rgk8t4xdqv::::res://Sprites/Environment/CornerTile.png<>uid://c0l5eojip56dk::::res://Sprites/Environment/CornerTile_full.png<>uid://bs8r6sq5keoh5::::res://Sprites/Environment/background layers/cornertile_2-export.png
-export_presets.cfg::TextFile::-1::1712879952::0::1::::<><>::
-healthbar.gd::GDScript::-1::1712879952::0::1::::<>ProgressBar<>::
-healthbar.tscn::PackedScene::1301218142370941267::1712879952::0::1::::<><>::res://healthbar.gd
-icon.svg::CompressedTexture2D::8904118163723717515::1712879952::1712879952::1::::<><>::
-main.gd::GDScript::-1::1712879952::0::1::::<>Node2D<>::
-main.tscn::PackedScene::7878489227177933876::1712882146::0::1::::<><>::uid://baabn48f6q0qf::::res://Scenes/flower.tscn<>res://main.gd<>uid://mn2v6qjyblob::::res://environments.tscn<>uid://crs1qne0rtnsf::::res://Scenes/Grass.tscn<>uid://dxy11jayr3sq4::::res://Scenes/widegrass.tscn<>uid://c8ws5idwflt67::::res://Scenes/main_char.tscn<>uid://cqnrwn042lh5::::res://Scenes/ability_1.tscn<>uid://bn4plh6r5g5mm::::res://Scenes/Inventory.tscn<>uid://beoikt7f86axn::::res://Sprites/Environment/blue tree 2 anim.png<>uid://1onfm3nkksmc::::res://Sprites/Environment/rocc.png<>uid://0wroaif1f0jr::::res://UI/pause_menu.tscn<>res://Scripts/Area2D.gd<>uid://dfijw41xkd6k8::::res://background.tscn<>uid://b01ws8gttyj58::::res://Scenes/falling_spikes.tscn<>uid://bspl0xad4k1js::::res://Enemy.tscn
-Menu.gd::GDScript::-1::1712879952::0::1::::<>Control<>::
-Popup.gd::GDScript::-1::1712879952::0::1::::<>Popup<>::
-popup.tscn::PackedScene::3289960977505956704::1712879952::0::1::::<><>::res://popup.gd<>uid://4okwckfclbvd::::res://Silver.ttf
-Silver.ttf::FontFile::2065024332178376809::1712879952::1712879952::1::::<><>::
-::res://Magik/::1712879952
-Back.gd::GDScript::-1::1712879952::0::1::::<>Button<>::
-options_menu.gd::GDScript::-1::1712879952::0::1::::<>Control<>::
-::res://Scenes/::1712882448
-ability_1.tscn::PackedScene::174228587515242560::1712882146::0::1::::<><>::
-Control.gd::GDScript::-1::1712882274::0::1::::<>Control<>::
-control.tscn::PackedScene::8983878243442057442::1712882110::0::1::::<><>::res://Scenes/Control.gd
-damaging.tscn::PackedScene::4749192927140040174::1712879952::0::1::::<><>::res://Scripts/damaging.gd<>uid://sc5psl5mvup1::::res://Sprites/Environment/Spikes1.png
-death_screen.gd::GDScript::-1::1712881776::0::1::::<>Control<>::
-death_screen.tscn::PackedScene::1725115451898642631::1712882471::0::1::::<><>::res://Scenes/death_screen.gd
-falling_spikes.tscn::PackedScene::4196185257809614609::1712882146::0::1::::<><>::
-flower.tscn::PackedScene::2386506190431592921::1712879952::0::1::::<><>::uid://ctqt40apd54sb::::res://Sprites/Environment/flower.png
-Grass.tscn::PackedScene::6004818413462370277::1712879952::0::1::::<><>::uid://4jxgwvveoens::::res://Sprites/Environment/Grass.png
-Inventory.tscn::PackedScene::3359673420844857484::1712882147::0::1::::<><>::
-main_char.tscn::PackedScene::7135636423545459890::1712882146::0::1::::<><>::res://Scripts/Character.gd<>uid://ca7in2cmks3g3::::res://Sprites/Characters/walkcyclefinal.png<>uid://by4fyon6qf1de::::res://Sprites/Characters/idle.png<>uid://c1cpni5svlhp8::::res://Sprites/Characters/mage_jumpnew.png
-menu.tscn::PackedScene::7972357429849585809::1712882146::0::1::::<><>::res://Menu.gd<>uid://4okwckfclbvd::::res://Silver.ttf<>uid://bpcrxnpbg0qgo::::res://Sprites/Environment/in game background.png
-node_2d.tscn::PackedScene::3356597265597077870::1712879952::0::1::::<><>::
-options_menu.tscn::PackedScene::554668167039368664::1712882146::0::1::::<><>::res://Magik/options_menu.gd
-win_screen.tscn::PackedScene::2615961928586413500::1712882513::0::1::::<><>::res://Scenes/death_screen.gd
-tile_map.tscn::PackedScene::2578739726440556211::1712879952::0::1::::<><>::
-widegrass.tscn::PackedScene::8824776067129379061::1712879952::0::1::::<><>::uid://dtwjq61f54331::::res://Sprites/Environment/wide grass.png
-win_screen.gd::GDScript::-1::1712882448::0::1::::<>Control<>::
-::res://Scripts/::1712882144
-Area2D.gd::GDScript::-1::1712879952::0::1::::<>Area2D<>::
-Character.gd::GDScript::-1::1712880799::0::1::::<>CharacterBody2D<>::
-damaging.gd::GDScript::-1::1712879952::0::1::::<>Node2D<>::
-Enemy.gd::GDScript::-1::1712882144::0::1::::<>CharacterBody2D<>::
-global.gd::GDScript::-1::1712879952::0::1::::<>Node<>::
-Menu.gd::GDScript::-1::1712879952::0::1::::<>Control<>::
-::res://Sprites/::1712879952
-mage_jump.png::CompressedTexture2D::4935750112095406057::1712879952::1712879952::1::::<><>::
-::res://Sprites/Characters/::1712879952
-crab 6 (1).png::CompressedTexture2D::8713277240773009688::1712879952::1712879952::1::::<><>::
-idle.png::CompressedTexture2D::4131167086730627226::1712879952::1712879952::1::::<><>::
-mage_jump.png::CompressedTexture2D::5203255589411136356::1712879952::1712879952::1::::<><>::
-mage_jumpnew.png::CompressedTexture2D::6602814495072699555::1712879952::1712879952::1::::<><>::
-walkcyclefinal.png::CompressedTexture2D::4839411828558401544::1712879952::1712879952::1::::<><>::
-::res://Sprites/Environment/::1712879952
-blue tree 2 anim.png::CompressedTexture2D::2696581988333137603::1712879952::1712879952::1::::<><>::
-button.png::CompressedTexture2D::6480194552020978872::1712879952::1712879952::1::::<><>::
-CornerTile.png::CompressedTexture2D::6863035135250136681::1712879952::1712879952::1::::<><>::
-cornertile_2.png::CompressedTexture2D::7127739273572997024::1712879952::1712879952::1::::<><>::
-CornerTile_full.png::CompressedTexture2D::6552100016205168012::1712879952::1712879952::1::::<><>::
-Dirt.png::CompressedTexture2D::1078889551835146126::1712879952::1712879952::1::::<><>::
-flower.png::CompressedTexture2D::6140666165230085849::1712879952::1712879952::1::::<><>::
-Grass.png::CompressedTexture2D::2055464259801175660::1712879952::1712879952::1::::<><>::
-heartempty.png::CompressedTexture2D::859884879426694444::1712879952::1712879952::1::::<><>::
-heartfull.png::CompressedTexture2D::8284296818721129884::1712879952::1712879952::1::::<><>::
-in game background.png::CompressedTexture2D::3444456061938621730::1712879952::1712879952::1::::<><>::
-menu.png::CompressedTexture2D::1748608733195864675::1712879952::1712879952::1::::<><>::
-rocc.png::CompressedTexture2D::1854610147160330866::1712879952::1712879952::1::::<><>::
-Spikes1.png::CompressedTexture2D::1269377201477368784::1712879952::1712879952::1::::<><>::
-spiky platform.png::CompressedTexture2D::4483964611285390224::1712879952::1712879952::1::::<><>::
-tile.png::CompressedTexture2D::2188390654185224696::1712879952::1712879952::1::::<><>::
-wide grass.png::CompressedTexture2D::8538843085085819690::1712879952::1712879952::1::::<><>::
-::res://Sprites/Environment/background layers/::1712879952
-cornertile_2-export.png::CompressedTexture2D::3719032855063511236::1712879952::1712879952::1::::<><>::
-in game background_layer1.png::CompressedTexture2D::2562847622436691138::1712879952::1712879952::1::::<><>::
-in game background_layer2.png::CompressedTexture2D::4971819627147622108::1712879952::1712879952::1::::<><>::
-in game background_layer3.png::CompressedTexture2D::1241164015908158343::1712879952::1712879952::1::::<><>::
-::res://UI/::1712882146
-menu.tscn::PackedScene::5564510996836925087::1712879952::0::1::::<><>::res://Menu.gd
-pause_menu.gd::GDScript::-1::1712879952::0::1::::<>Control<>::
-pause_menu.tscn::PackedScene::1801194604152406031::1712882146::0::1::::<><>::
+::res://::1712913211
+background.tscn::PackedScene::7527308596103350409::1712816513::0::1::::<><>::uid://bpcrxnpbg0qgo::::res://Sprites/Environment/in game background.png
+character_body_2d.tscn::PackedScene::2605930371042604969::1708585698::0::1::::<><>::uid://dy4hr4gmufwvb::::res://icon.svg
+Enemy.tscn::PackedScene::3681499275469170860::1712909121::0::1::::<><>::res://Scripts/Enemy.gd<>uid://dwe1nyau4fa6c::::res://Sprites/Characters/crab 6 (1).png
+environment.tscn::PackedScene::4310446129266653865::1710403964::0::1::::<><>::uid://6gcqelym3m8g::::res://Sprites/Environment/tile.png<>uid://pmvfhg7jcfkg::::res://Sprites/Environment/Dirt.png<>uid://c41rgk8t4xdqv::::res://Sprites/Environment/CornerTile.png
+environments.tscn::PackedScene::870781548317631537::1712816513::0::1::::<><>::uid://6gcqelym3m8g::::res://Sprites/Environment/tile.png<>uid://pmvfhg7jcfkg::::res://Sprites/Environment/Dirt.png<>uid://c41rgk8t4xdqv::::res://Sprites/Environment/CornerTile.png<>uid://c0l5eojip56dk::::res://Sprites/Environment/CornerTile_full.png<>uid://bs8r6sq5keoh5::::res://Sprites/Environment/background layers/cornertile_2-export.png
+export_presets.cfg::TextFile::-1::1711173052::0::1::::<><>::
+healthbar.gd::GDScript::-1::1708586835::0::1::::<>ProgressBar<>::
+healthbar.tscn::PackedScene::1301218142370941267::1712462686::0::1::::<><>::res://healthbar.gd
+icon.svg::CompressedTexture2D::8904118163723717515::1707288239::1707288839::1::::<><>::
+main.gd::GDScript::-1::1712088168::0::1::::<>Node2D<>::
+main.tscn::PackedScene::7878489227177933876::1712816429::0::1::::<><>::uid://baabn48f6q0qf::::res://Scenes/flower.tscn<>res://main.gd<>uid://mn2v6qjyblob::::res://environments.tscn<>uid://crs1qne0rtnsf::::res://Scenes/Grass.tscn<>uid://dxy11jayr3sq4::::res://Scenes/widegrass.tscn<>uid://c8ws5idwflt67::::res://Scenes/main_char.tscn<>uid://cqnrwn042lh5::::res://Scenes/ability_1.tscn<>uid://bn4plh6r5g5mm::::res://Scenes/Inventory.tscn<>uid://beoikt7f86axn::::res://Sprites/Environment/blue tree 2 anim.png<>uid://1onfm3nkksmc::::res://Sprites/Environment/rocc.png<>uid://0wroaif1f0jr::::res://UI/pause_menu.tscn<>res://Scripts/Area2D.gd<>uid://dfijw41xkd6k8::::res://background.tscn<>uid://b01ws8gttyj58::::res://Scenes/falling_spikes.tscn<>uid://bspl0xad4k1js::::res://Enemy.tscn
+Menu.gd::GDScript::-1::1711861952::0::1::::<>Control<>::
+Popup.gd::GDScript::-1::1708242015::0::1::::<>Popup<>::
+popup.tscn::PackedScene::3289960977505956704::1711583399::0::1::::<><>::res://popup.gd<>uid://4okwckfclbvd::::res://Silver.ttf
+Silver.ttf::FontFile::2065024332178376809::1709590638::1708242188::1::::<><>::
+::res://Magik/::1712815377
+Back.gd::GDScript::-1::1710043890::0::1::::<>Button<>::
+options_menu.gd::GDScript::-1::1712815377::0::1::::<>Control<>::
+::res://Scenes/::1712909121
+ability_1.tscn::PackedScene::174228587515242560::1712816512::0::1::::<><>::
+Control.gd::GDScript::-1::1712909121::0::1::::<>Control<>::
+control.tscn::PackedScene::8983878243442057442::1712909121::0::1::::<><>::res://Scenes/Control.gd
+damaging.tscn::PackedScene::4749192927140040174::1708496529::0::1::::<><>::res://Scripts/damaging.gd<>uid://sc5psl5mvup1::::res://Sprites/Environment/Spikes1.png
+death_screen.gd::GDScript::-1::1712909121::0::1::::<>Control<>::
+death_screen.tscn::PackedScene::1725115451898642631::1712909121::0::1::::<><>::res://Scenes/death_screen.gd
+falling_spikes.tscn::PackedScene::4196185257809614609::1712816513::0::1::::<><>::
+flower.tscn::PackedScene::2386506190431592921::1712462686::0::1::::<><>::uid://ctqt40apd54sb::::res://Sprites/Environment/flower.png
+Grass.tscn::PackedScene::6004818413462370277::1712462686::0::1::::<><>::uid://4jxgwvveoens::::res://Sprites/Environment/Grass.png
+Inventory.tscn::PackedScene::3359673420844857484::1712909121::0::1::::<><>::
+main_char.tscn::PackedScene::7135636423545459890::1712909121::0::1::::<><>::res://Scripts/Character.gd<>uid://ca7in2cmks3g3::::res://Sprites/Characters/walkcyclefinal.png<>uid://by4fyon6qf1de::::res://Sprites/Characters/idle.png<>uid://c1cpni5svlhp8::::res://Sprites/Characters/mage_jumpnew.png
+menu.tscn::PackedScene::7972357429849585809::1712816512::0::1::::<><>::res://Menu.gd<>uid://4okwckfclbvd::::res://Silver.ttf<>uid://bpcrxnpbg0qgo::::res://Sprites/Environment/in game background.png
+node_2d.tscn::PackedScene::3356597265597077870::1707949753::0::1::::<><>::
+options_menu.tscn::PackedScene::554668167039368664::1712816512::0::1::::<><>::res://Magik/options_menu.gd
+tile_map.tscn::PackedScene::2578739726440556211::1710403877::0::1::::<><>::
+widegrass.tscn::PackedScene::8824776067129379061::1707949753::0::1::::<><>::uid://dtwjq61f54331::::res://Sprites/Environment/wide grass.png
+win_screen.gd::GDScript::-1::1712909121::0::1::::<>Control<>::
+win_screen.tscn::PackedScene::2615961928586413500::1712909121::0::1::::<><>::res://Scenes/death_screen.gd
+::res://Scripts/::1712909121
+Area2D.gd::GDScript::-1::1711861952::0::1::::<>Area2D<>::
+Character.gd::GDScript::-1::1712909121::0::1::::<>CharacterBody2D<>::
+damaging.gd::GDScript::-1::1708496526::0::1::::<>Node2D<>::
+Enemy.gd::GDScript::-1::1712909121::0::1::::<>CharacterBody2D<>::
+global.gd::GDScript::-1::1712088168::0::1::::<>Node<>::
+Menu.gd::GDScript::-1::1711861952::0::1::::<>Control<>::
+::res://Sprites/::1711861952
+mage_jump.png::CompressedTexture2D::4935750112095406057::1711861952::1711861952::1::::<><>::
+::res://Sprites/Characters/::1712815377
+crab 6 (1).png::CompressedTexture2D::8713277240773009688::1712815377::1712815377::1::::<><>::
+idle.png::CompressedTexture2D::4131167086730627226::1708240267::1708240267::1::::<><>::
+mage_jump.png::CompressedTexture2D::5203255589411136356::1708303121::1708303121::1::::<><>::
+mage_jumpnew.png::CompressedTexture2D::6602814495072699555::1708382049::1708382050::1::::<><>::
+walkcyclefinal.png::CompressedTexture2D::4839411828558401544::1708231606::1708231636::1::::<><>::
+::res://Sprites/Environment/::1712465113
+blue tree 2 anim.png::CompressedTexture2D::2696581988333137603::1712218705::1712218705::1::::<><>::
+button.png::CompressedTexture2D::6480194552020978872::1708408568::1708408568::1::::<><>::
+CornerTile.png::CompressedTexture2D::6863035135250136681::1708071077::1708071077::1::::<><>::
+cornertile_2.png::CompressedTexture2D::7127739273572997024::1712218292::1712218320::1::::<><>::
+CornerTile_full.png::CompressedTexture2D::6552100016205168012::1711946677::1711946684::1::::<><>::
+Dirt.png::CompressedTexture2D::1078889551835146126::1708071077::1708071077::1::::<><>::
+flower.png::CompressedTexture2D::6140666165230085849::1707949753::1707949753::1::::<><>::
+Grass.png::CompressedTexture2D::2055464259801175660::1707949753::1707949753::1::::<><>::
+heartempty.png::CompressedTexture2D::859884879426694444::1708583827::1708583828::1::::<><>::
+heartfull.png::CompressedTexture2D::8284296818721129884::1708583836::1708583836::1::::<><>::
+in game background.png::CompressedTexture2D::3444456061938621730::1711861952::1711861952::1::::<><>::
+menu.png::CompressedTexture2D::1748608733195864675::1708408420::1708408421::1::::<><>::
+rocc.png::CompressedTexture2D::1854610147160330866::1708495923::1708495924::1::::<><>::
+Spikes1.png::CompressedTexture2D::1269377201477368784::1708495936::1708495937::1::::<><>::
+spiky platform.png::CompressedTexture2D::4483964611285390224::1708495930::1708495931::1::::<><>::
+tile.png::CompressedTexture2D::2188390654185224696::1708071077::1708071077::1::::<><>::
+wide grass.png::CompressedTexture2D::8538843085085819690::1707949753::1707949753::1::::<><>::
+::res://Sprites/Environment/background layers/::1712528206
+cornertile_2-export.png::CompressedTexture2D::3719032855063511236::1712528205::1712528206::1::::<><>::
+in game background_layer1.png::CompressedTexture2D::2562847622436691138::1712465135::1712465135::1::::<><>::
+in game background_layer2.png::CompressedTexture2D::4971819627147622108::1712465141::1712465142::1::::<><>::
+in game background_layer3.png::CompressedTexture2D::1241164015908158343::1712465146::1712465146::1::::<><>::
+::res://UI/::1712816512
+menu.tscn::PackedScene::5564510996836925087::1711583399::0::1::::<><>::res://Menu.gd
+pause_menu.gd::GDScript::-1::1710043890::0::1::::<>Control<>::
+pause_menu.tscn::PackedScene::1801194604152406031::1712816512::0::1::::<><>::

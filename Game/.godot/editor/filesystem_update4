@@ -1,5 +1,5 @@
-res://Scenes/main_char.tscn
 res://main.tscn
+res://Scenes/main_char.tscn
 res://Scenes/ability_1.tscn
 res://UI/pause_menu.tscn
 res://Scenes/menu.tscn
@@ -8,12 +8,6 @@ res://Enemy.tscn
 res://Scenes/falling_spikes.tscn
 res://environments.tscn
 res://background.tscn
-res://death_screen.tscn
-res://Scenes/Inventory.tscn
-res://Scripts/Character.gd
 res://Scenes/death_screen.tscn
-res://Scripts/Enemy.gd
-res://Scenes/death_screen.gd
-res://Scenes/Control.gd
-res://Scenes/control.tscn
+res://Scenes/Inventory.tscn
 res://Scenes/win_screen.tscn
