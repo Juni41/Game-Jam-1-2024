@@ -12,3 +12,4 @@ res://death_screen.tscn
 res://Scenes/Inventory.tscn
 res://Scripts/Character.gd
 res://Scenes/death_screen.tscn
+res://Scripts/Enemy.gd
